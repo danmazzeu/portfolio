@@ -1,5 +1,12 @@
-.title-color { color: #ddd; }
-.footer-color { color: #999; }
+.title-color { 
+    color: #ddd;
+    text-shadow: 1px 1px 1px #fff;
+}
+.footer-color { 
+    color: #999;
+    text-shadow: 1px 1px 1px #fff;
+}
+
 .expert-color { color: #ff0026; }
 .medium-color { color: #ff9100; }
 .basic-color { color: #4773ba; }
