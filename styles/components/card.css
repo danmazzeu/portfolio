@@ -11,9 +11,7 @@
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
-.card-inverse {
-    background-color: #333 !important;
-}
+.card-inverse { background-color: #333 !important; }
 
 .card:hover,
 .card-inverse:hover {
@@ -23,20 +21,60 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card:hover * {
-    text-shadow: 1px 1px 1px #ddd;
+.card h2,
+.card-inverse h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-.card-inverse:hover * {
-    text-shadow: 1px 1px 1px #000;
+.card-inverse h2 { color: #fff; }
+
+.card h3,
+.card-inverse h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .card p,
 .card-inverse p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #333;
     height: 100%;
     align-self: flex-start;
 }
 
-.card-noanimate {
-    transform: none !important;
+.card-inverse p { color: #ddd; }
+
+.card a,
+.card-inverse a {
+    width: fit-content;
+    margin-top: 15px;
+    padding: 8px 10px;
+    margin-top: 20px;
+    border: 1px dashed #3a78ab;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #3a78ab;
 }
+
+.card-inverse a {
+    border: 1px dashed #13cfcf !important;
+    color: #13cfcf !important;
+}
+
+.card a i,
+.card-inverse a i {
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    animation: energy 0.5s infinite;
+}
+
+.card-noanimate { transform: none !important; }
