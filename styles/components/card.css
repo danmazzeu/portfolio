@@ -1,0 +1,42 @@
+.card,
+.card-inverse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 2px dashed transparent;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.card-inverse {
+    background-color: #333 !important;
+}
+
+.card:hover,
+.card-inverse:hover {
+    scale: 1.02;
+    transform: rotate(-3deg);
+    border: 2px dashed #ccc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:hover * {
+    text-shadow: 1px 1px 1px #ddd;
+}
+
+.card-inverse:hover * {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.card p,
+.card-inverse p {
+    height: 100%;
+    align-self: flex-start;
+}
+
+.card-noanimate {
+    transform: none !important;
+}
