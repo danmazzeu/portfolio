@@ -16,7 +16,7 @@
 .card:hover,
 .card-inverse:hover {
     scale: 1.02;
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
     border: 2px dashed #ccc;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
