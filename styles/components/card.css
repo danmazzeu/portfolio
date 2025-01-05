@@ -22,6 +22,7 @@
 .card i,
 .card-inverse i {
     font-size: 20px;
+    line-height: 20px;
     margin-right: 10px;
     display: inline-block;
     animation: jello 2s infinite;
@@ -33,6 +34,7 @@
 .card h2,
 .card-inverse h2 {
     font-size: 20px;
+    line-height: 30px;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 5px;
