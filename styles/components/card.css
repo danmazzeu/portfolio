@@ -13,7 +13,9 @@
 .card-inverse { background-color: #333 !important; }
 
 .card:hover,
-.card-inverse:hover {
+.card-inverse:hover,
+.card-inverse.active,
+.card.active {
     scale: 1.02;
     transform: rotate(-2deg);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
