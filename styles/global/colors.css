@@ -11,15 +11,6 @@
 .medium-color { color: #ff9100; }
 .basic-color { color: #4773ba; }
 
-.instagram-color,
-.facebook-color,
-.github-color,
-.linkedin-color {
-    display: inline-block;
-    animation: jello 2s infinite;
-    transform-origin: center;
-}
-
 .instagram-color { color: #e1306c; }
 .facebook-color { color: #4267b2; }
 .github-color { color: #000; }
