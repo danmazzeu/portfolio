@@ -27,9 +27,9 @@
     display: inline-block;
     animation: jello 2s infinite;
     transform-origin: center;
-    color: #999;
 }
 
+.card i:not(a i) { color: #999 !important; }
 .card-inverse i:not(a i) { color: #888 !important; }
 
 .card h2,
