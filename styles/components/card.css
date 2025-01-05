@@ -29,8 +29,8 @@
     transform-origin: center;
 }
 
-.card i:not(a i) { color: #999 !important; }
-.card-inverse i:not(a i) { color: #888 !important; }
+.card i:not(a i) { color: #999; }
+.card-inverse i:not(a i) { color: #888; }
 
 .card h2,
 .card-inverse h2 {

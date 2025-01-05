@@ -11,10 +11,10 @@
 .medium-color { color: #ff9100; }
 .basic-color { color: #4773ba; }
 
-.instagram-color { color: #e1306c; }
-.facebook-color { color: #4267b2; }
-.github-color { color: #000; }
-.linkedin-color { color: #4267b2; }
+.instagram-color { color: #e1306c !important; }
+.facebook-color { color: #4267b2 !important; }
+.github-color { color: #000 !important; }
+.linkedin-color { color: #4267b2 !important; }
 
 @keyframes jello {
     11.1% { transform: none }
