@@ -37,7 +37,7 @@
 }
 
 .card i:not(a i) { color: #999; }
-.card-inverse i:not(a i) { color: #888; }
+.card-inverse i:not(a i) { color: #2e5a94; }
 
 .card h2,
 .card-inverse h2 {
