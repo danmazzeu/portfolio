@@ -10,6 +10,10 @@ $(document).ready(function() {
             if (viewportBottom >= $this.offset().top && viewportTop <= $this.offset().top + $this.outerHeight()) {
                 setTimeout(function() {
                     $this.addClass('active');
+
+                    setTimeout(function() {
+                        $this.removeClass('active');
+                    }, 1600); 
                 }, delay);
 
                 delay += 150;
