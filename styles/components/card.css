@@ -43,7 +43,7 @@
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 5px;
-    color: #333;
+    color: #272727;
 }
 
 .card-inverse h2 { color: #fff; }
@@ -61,7 +61,7 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 25px;
-    color: #333;
+    color: #272727;
     height: 100%;
     align-self: flex-start;
 }
