@@ -15,7 +15,10 @@
     scale: 1.03;
 }
 
-.card-inverse { background-color: #272727 !important; }
+.card-inverse { 
+    background-color: #f0f0f0 !important;
+    border: 1px solid #ddd;
+}
 
 .card-inverse.active,
 .card.active {
@@ -46,8 +49,6 @@
     color: #272727;
 }
 
-.card-inverse h2 { color: #fff; }
-
 .card h3,
 .card-inverse h3 {
     font-size: 16px;
@@ -66,8 +67,6 @@
     align-self: flex-start;
 }
 
-.card-inverse p { color: #ddd; }
-
 .card a,
 .card-inverse a {
     width: fit-content;
@@ -78,11 +77,4 @@
     border-radius: 10px;
     font-size: 17px;
     color: #2e5a94;
-    background-color: #f9f9f9;
-}
-
-.card-inverse a {
-    border: 1px dashed #00ffdd !important;
-    color: #00ffdd !important;
-    background-color: transparent !important;
 }
