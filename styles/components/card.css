@@ -12,8 +12,6 @@
 
 .card-inverse { background-color: #333 !important; }
 
-.card:hover,
-.card-inverse:hover,
 .card-inverse.active,
 .card.active {
     scale: 1.02;
