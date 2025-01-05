@@ -19,9 +19,8 @@
 
 .card-inverse.active,
 .card.active {
-    animation: bounce 1.5s;
+    animation: bounce 2s;
     transform-origin: center;
-    box-shadow: rgba(255, 181, 97, 0.5) 0px 5px 15px;
 }
 
 .card i,
