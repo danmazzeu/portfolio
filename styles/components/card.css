@@ -15,7 +15,7 @@
     scale: 1.03;
 }
 
-.card-inverse { background-color: #333 !important; }
+.card-inverse { background-color: #272727 !important; }
 
 .card-inverse.active,
 .card.active {
