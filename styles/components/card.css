@@ -16,11 +16,8 @@
 }
 
 .card-inverse { 
-    background: rgb(214,214,214);
-    background: -moz-linear-gradient(37deg, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 82%);
-    background: -webkit-linear-gradient(37deg, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 82%);
-    background: linear-gradient(37deg, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 82%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d6d6d6",endColorstr="#ffffff",GradientType=1);
+    border: 2px dashed #ccc;
+    background-color: #eee;
 }
 
 .card-inverse.active,
