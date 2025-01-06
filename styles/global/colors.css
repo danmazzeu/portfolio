@@ -9,6 +9,10 @@
     color: #404040;
 }
 
+@media all and (max-width: 768px) {
+    .title-color { font-size: 25px; }
+}
+
 .subtitle-color { color: var(--theme); }
 .footer-color { color: #666; }
 
