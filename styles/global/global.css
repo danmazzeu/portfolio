@@ -92,6 +92,8 @@ h2 {
     color: #fff;
 }
 
+h3 { font-size: 15px; }
+
 .hidden { display: none !important; }
 
 ::-webkit-scrollbar {

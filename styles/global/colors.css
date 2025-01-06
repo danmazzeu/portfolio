@@ -1,13 +1,20 @@
-.title-color { 
-    color: #404040;
-}
-.footer-color { 
-    color: #666;
-}
+.title-color { color: #404040; }
+.subtitle-color { color: var(--theme); }
+.footer-color { color: #666; }
 
-.expert-color { color: #ff0026; }
+.expert-color { color: #4773ba; }
 .medium-color { color: #ff9100; }
-.basic-color { color: #4773ba; }
+.basic-color { color: #ff0033; }
+
+.expert-color,
+.medium-color,
+.basic-color {
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: 1px dashed #666;
+    width: fit-content;
+    background-color: #222 !important;
+}
 
 .instagram-color { color: #e1306c !important; }
 .facebook-color { color: #4267b2 !important; }

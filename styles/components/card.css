@@ -28,7 +28,7 @@
     transform-origin: center;
 }
 
-.card i:not(a i) { color: #999; }
+.card i:not(a i) { color: var(--theme); }
 
 .card h2 {
     font-size: 18px;
@@ -58,8 +58,8 @@
     margin-top: 15px;
     padding: 10px 15px;
     margin-top: 20px;
-    border: 1px dashed #c99f55;
+    border: 1px dashed var(--theme);
     border-radius: 10px;
     font-size: 1.1rem;
-    color: #c99f55;
+    color: var(--theme);
 }
