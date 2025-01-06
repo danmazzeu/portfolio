@@ -21,7 +21,7 @@
     border-radius: 8px;
     border: 0;
     color: #000;
-    background-color: #c99f55;
+    background-color: var(--theme);
 }
 
 .field > p {
