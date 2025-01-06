@@ -24,7 +24,7 @@ html { scroll-behavior: smooth; }
 
 body {
     padding: 25px 15px;
-    background-color: #f5f5f5;
+    background-color: #222;
 }
 
 ul { list-style: none; }
@@ -42,21 +42,24 @@ a:focus, a:active {
     outline: none !important;
 }
 
-img {
+img,
+video {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    border: 5px solid #fff;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border: 10px solid #262626;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-img:hover {
+img:hover,
+video:hover {
     scale: 1.05;
 }
 
-img.active {
+img.active,
+video.active {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: bounce 2s;
     transform-origin: center;
@@ -83,6 +86,13 @@ textarea:disabled {
     background-color: #f4f4f4 !important;
     opacity: 0.7;
     cursor: default !important;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #fff;
 }
 
 .hidden { display: none !important; }
