@@ -62,7 +62,7 @@
 
 .card p,
 .card-inverse p {
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: 300;
     line-height: 25px;
     color: #272727;
@@ -78,6 +78,6 @@
     margin-top: 20px;
     border: 1px dashed #ccc;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 1.1rem;
     color: #2e5a94;
 }
