@@ -101,16 +101,16 @@ h3 { font-size: 15px; }
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #cccccc;
+    background-color: #111;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border: 2px solid #333;
+    background-color: var(--theme);
+    border: 2px solid var(--theme);
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #333;
+    background-color: var(--theme);
 }
