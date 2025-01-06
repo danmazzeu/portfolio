@@ -16,8 +16,8 @@
 }
 
 .card-inverse { 
-    border: 2px dashed #ccc;
-    background-color: #eee;
+    border: 1px dashed #2e5a94;
+    background-color: transparent;
 }
 
 .card-inverse.active,
