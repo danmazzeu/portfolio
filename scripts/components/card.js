@@ -2,7 +2,7 @@ $(document).ready(function() {
     let delay = 0;
 
     $(window).scroll(function() {
-        $('.card, .card-inverse, img').each(function() {
+        $('.card').each(function() {
             var $this = $(this);
             var viewportTop = $(window).scrollTop() + $(window).height() / 2 - $this.outerHeight() / 1.5;
             var viewportBottom = viewportTop + $this.outerHeight(); 

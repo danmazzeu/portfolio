@@ -42,7 +42,6 @@ a:focus, a:active {
     outline: none !important;
 }
 
-img,
 video {
     width: 100%;
     height: auto;
@@ -53,12 +52,10 @@ video {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-img:hover,
 video:hover {
     scale: 1.05;
 }
 
-img.active,
 video.active {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: bounce 2s;
