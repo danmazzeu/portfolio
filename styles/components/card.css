@@ -65,6 +65,6 @@
     color: var(--theme);
 }
 
-@media all and (max-width: 768px) {
-    .card * { scale: 0.95; }
+@media all and (max-width: 800px) {
+    .card * { scale: 0.94; }
 }
