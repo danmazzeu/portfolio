@@ -18,7 +18,7 @@ h2 {
 }
 
 h2.special { 
-    font-size: calc(var(--font-size) + 8px); 
+    font-size: calc(var(--font-size) + 10px); 
 }
 
 span { 
@@ -55,6 +55,7 @@ h2 > i {
 
 a > i { font-size: var(--font-size); }
 h2 > i { font-size: calc(var(--font-size) + 4px); }
+h2.special > i { font-size: calc(var(--font-size) + 10px); }
 
 input { font-size: var(--font-size); }
 button { font-size: var(--font-size); }
@@ -69,6 +70,8 @@ p.footer b {
 @media all and (max-width: 1200px) {
     h1 { font-size: 25px; }
     h2 { font-size: var(--font-size); }
+    h2.special { font-size: calc(var(--font-size) + 6px); }
+    h2.special > i { font-size: calc(var(--font-size) + 6px); }
     h2 > i { font-size: var(--font-size); }
     span { font-size: calc(var(--font-size) - 2px); }
     p { font-size: calc(var(--font-size) - 2px); }
