@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         $('.card').each(function() {
             var $this = $(this);
-            var viewportTop = $(window).scrollTop() + $(window).height() / 2 - $this.outerHeight() / 1.5;
+            var viewportTop = $(window).scrollTop() + $(window).height() / 2 - $this.outerHeight();
             var viewportBottom = viewportTop + $this.outerHeight(); 
 
             if (viewportBottom >= $this.offset().top && viewportTop <= $this.offset().top + $this.outerHeight()) {
