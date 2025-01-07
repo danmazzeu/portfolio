@@ -116,5 +116,5 @@ h3 { font-size: 15px; }
 }
 
 @media (max-width: 768px) {
-    * { font-size: calc(1em - 3px); }
+    * { font-size: calc(1em - 3px) !important; }
 }
