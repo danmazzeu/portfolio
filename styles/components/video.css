@@ -1,0 +1,19 @@
+video {
+    width: 100%;
+    height: auto;
+    padding: var(--video-padding);
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--video-radius);
+    border: var(--video-border);
+    box-shadow: var(--video-boxShadow);
+}
+
+video:hover {
+    scale: var(--video-hoverScale);
+}
+
+video.active {
+    animation: var(--video-animation);
+    transform-origin: center;
+}

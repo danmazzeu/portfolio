@@ -1,7 +1,7 @@
 const linksWhatsapp = document.querySelectorAll('.whatsapp');
 
-const wppNumber = '16993630686';
+const wppNumber = '5516993630686';
 
 linksWhatsapp.forEach(link => {
-    link.href = 'https://wa.me/55' + wppNumber;
+    link.href = 'https://wa.me/' + wppNumber;
 });

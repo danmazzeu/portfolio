@@ -1,3 +1,48 @@
 :root {
+    /* Colors */
     --theme: #95d40f;
+    --subtitle: #505050;
+    --subtitle-Bordercolor: #505050;
+    --footer: #666;
+    --expert: #4773ba;
+    --medium: #ff9100;
+    --basic: #ff0033;
+    --instagram: #e1306c !important;
+    --facebook: #4267b2 !important;
+    --github: #fff !important;
+    --linkedin: #4267b2 !important;
+    --input: #fff;
+    --button: #000;
+
+
+    /* Global */
+    --font-size: 16px;
+    --radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 7px 13px -3px rgba(0, 0, 0, 0.3), 0 -3px 0 inset rgba(0, 0, 0, 0.2);
+    --scale: 1.05;
+    --animation: bounce 2s;
+
+    /* Card */
+    --card-gap: 15px;
+    --card-padding: 20px;
+    --card-radius: var(--radius);
+    --card-border: 1px solid #303030;
+    --card-background: #262626;
+    --card-boxSahdow: var(--box-shadow);
+    --card-transition: all 0.2s ease-in-out;
+    --card-hoverScale: var(--scale);
+    --card-animation: var(--animation);
+    --card-linkPadding: 10px 15px;
+    --card-linkBorder: 1px dashed var(--theme);
+    --card-spanBorder: 1px dashed var(--theme);
+    --card-buttonPadding: 10px;
+    --card-inputBorder: 1px solid var(--theme);
+
+    /* Video */
+    --video-radius: var(--radius);
+    --video-border: 1px solid #303030;
+    --video-boxShadow: var(--box-shadow);
+    --video-hoverScale: var(--scale);
+    --video-animation: var(--animation);
+    --video-padding: 10px;
 }

@@ -8,7 +8,6 @@
     outline: none;
     font-family: "Lato", sans-serif;
     text-rendering: optimizeLegibility;
-    font-size: 15px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -42,26 +41,6 @@ a:focus, a:active {
     outline: none !important;
 }
 
-video {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    border: 10px solid #262626;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-}
-
-video:hover {
-    scale: 1.05;
-}
-
-video.active {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    animation: bounce 2s;
-    transform-origin: center;
-}
-
 input,
 textarea,
 button,
@@ -85,15 +64,6 @@ textarea:disabled {
     cursor: default !important;
 }
 
-h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-h3 { font-size: 15px; }
-
 .hidden { display: none !important; }
 
 ::-webkit-scrollbar {
@@ -113,9 +83,4 @@ h3 { font-size: 15px; }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--theme);
-}
-
-@media (max-width: 768px) {
-    * { font-size: calc(1em - 3px); }
-    a > i { font-size: calc(1em - 1px) !important; }
 }

@@ -1,40 +1,14 @@
-.title-color {
-    width: 100%; 
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-left: 16px;
-    width: 100%;
-    border-left: 10px solid #505050;
-    color: #505050;
-}
+a { color: var(--theme); }
+input { color: var(--input); }
+button { color: var(--button); }
+i { color: var(--theme); }
 
-@media all and (max-width: 768px) {
-    .title-color { font-size: 25px; }
-    .footer-color { font-size: 14px; }
-    .expert-color { font-size: 13px; }
-    .medium-color { font-size: 13px; }
-    .basic-color { font-size: 13px; }
-}
+.footer-color { color: var(--footer); }
+.expert-color { color: var(--expert); }
+.medium-color { color: var(--medium); }
+.basic-color { color: var(--basic); }
 
-.subtitle-color { color: var(--theme); }
-.footer-color { color: #666; }
-
-.expert-color { color: #4773ba; }
-.medium-color { color: #ff9100; }
-.basic-color { color: #ff0033; }
-
-.expert-color,
-.medium-color,
-.basic-color {
-    padding: 5px 15px;
-    border-radius: 8px;
-    border: 1px dashed #666;
-    width: fit-content;
-    background-color: #222 !important;
-}
-
-.instagram-color { color: #e1306c !important; }
-.facebook-color { color: #4267b2 !important; }
-.github-color { color: #fff !important; }
-.linkedin-color { color: #4267b2 !important; }
+.instagram-color { color: var(--instagram); }
+.facebook-color { color: var(--facebook); }
+.github-color { color: var(--github); }
+.linkedin-color { color: var(--linkedin); }

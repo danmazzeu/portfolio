@@ -1,65 +1,53 @@
 .card {
     display: flex;
     flex-direction: column;
+    gap: var(--card-gap);
     width: 100%;
     height: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #303030;
-    background-color: #262626;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    border: var(--card-border);
+    background-color: var(--card-background);
+    box-shadow: var(--card-boxSahdow);
+    transition: var(--card-transition);
 }
-
+  
 .card:hover {
-    scale: 1.05;
+    scale: var(--card-hoverScale);
 }
-
+  
 .card.active {
-    animation: bounce 2s;
+    animation: var(--card-animation);
     transform-origin: center;
 }
-
-.card i {
-    font-size: 20px;
-    line-height: 20px;
-    margin-right: 10px;
-    display: inline-block;
-    animation: jello 2s infinite;
-    transform-origin: center;
+  
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap);
 }
-
-.card i:not(a i) { color: var(--theme); }
-
-.card h2 {
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-.card h3 {
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.card p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 25px;
-    color: #f9f9f9;
-    height: 100%;
-    align-self: flex-start;
-}
-
+  
 .card a {
     width: fit-content;
+    padding: var(--card-linkPadding);
     margin-top: 15px;
-    padding: 10px 15px;
-    margin-top: 20px;
     border: 1px dashed var(--theme);
-    border-radius: 10px;
-    font-size: 1.1rem;
-    color: var(--theme);
+    border-radius: var(--card-radius);
+}
+
+.card input,
+.card button {
+    padding: var(--card-buttonPadding);
+    border-radius: var(--card-radius);
+}
+
+.card input {
+    border: var(--card-inputBorder);
+    background-color: transparent;
+}
+  
+.card button {
+    width: fit-content;
+    border: 0;
+    background-color: var(--theme);
 }
