@@ -30,7 +30,6 @@
     --card-background: #262626;
     --card-boxSahdow: var(--box-shadow);
     --card-transition: all 0.2s ease-in-out;
-    --card-hoverScale: var(--scale);
     --card-animation: var(--animation);
     --card-linkPadding: 10px 15px;
     --card-linkBorder: 1px dashed var(--theme);
