@@ -114,3 +114,7 @@ h3 { font-size: 15px; }
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--theme);
 }
+
+@media (max-width: 768px) {
+    * { font-size: calc(1em - 3px); }
+}

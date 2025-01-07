@@ -63,7 +63,3 @@
     font-size: 1.1rem;
     color: var(--theme);
 }
-
-@media all and (max-width: 800px) {
-    .card * { scale: 0.92; }
-}
