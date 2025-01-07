@@ -1,7 +1,7 @@
 const themes = [
     '#ffff00', // Yellow
     '#bad411', // Lime
-    '#159fc2', // Blue
+    '#349eeb', // Blue
     '#ebaa50', // Light Orange
     '#00ffff', // Light Blue
 ];
@@ -22,4 +22,4 @@ function setRandomTheme() {
   
 window.onload = setRandomTheme;
   
-setInterval(setRandomTheme, 10000);
+setInterval(setRandomTheme, 5000);
