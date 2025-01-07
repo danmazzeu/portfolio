@@ -21,4 +21,4 @@ function setRandomTheme() {
   
 window.onload = setRandomTheme;
   
-setInterval(setRandomTheme, 2000);
+setInterval(setRandomTheme, 3000);
