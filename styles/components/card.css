@@ -15,7 +15,6 @@
 }
 
 .card.active {
-    scale: 1.05;
     animation: bounce 2s;
     transform-origin: center;
 }

@@ -11,11 +11,11 @@
 }
 
 @keyframes bounce {
-    0% { transform:translateY(0%); }
-    20% { transform:translateY(-15%); }
-    40% { transform:translateY(0%); }
-    60% { transform:translateY(-7%); }
-    80% { transform:translateY(0%); }
-    90% { transform:translateY(-3%); }
-    100% { transform:translateY(0); }
+    0% { transform:translateY(0%) scale(1); }
+    20% { transform:translateY(-15%) scale(1.03); }
+    40% { transform:translateY(0%) scale(1); }
+    60% { transform:translateY(-7%) scale(1.05); }
+    80% { transform:translateY(0%) scale(1); }
+    90% { transform:translateY(-3%) scale(1.03); }
+    100% { transform:translateY(0) scale(1); }
 }
