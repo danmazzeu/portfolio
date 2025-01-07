@@ -10,7 +10,6 @@ video {
 }
 
 video:hover {
-    scale: var(--video-hoverScale);
     border: 1px solid var(--theme);
 }
 

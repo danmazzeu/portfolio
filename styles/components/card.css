@@ -13,7 +13,6 @@
 }
   
 .card:hover {
-    scale: var(--card-hoverScale);
     border: 1px solid var(--theme);
 }
   
