@@ -66,5 +66,5 @@
 }
 
 @media all and (max-width: 768px) {
-    .card * { scale: 0.96; }
+    .card * { scale: 0.95; }
 }
