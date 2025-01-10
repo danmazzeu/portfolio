@@ -106,6 +106,8 @@
     background-color: transparent !important;
 }
 
-@media (max-width: 1200) {
-    .gamecard { height: 800px; }   
+@media all and (max-width: 1200px) {
+    .gamecard { height: 650px; }
+    .gamecard h1 { font-size: 18px !important; }
+    .gamecard p { font-size: calc(var(--font-size) - 2px) !important; }
 }
