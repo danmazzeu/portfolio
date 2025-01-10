@@ -26,11 +26,10 @@
 }
 
 @keyframes move {
-    10% { background-position: 15% 35%; transform: scale(1.03); } 
+    10% { background-position: 15% 35%; transform: scale(1.03); }
     20% { background-position: 15% 35%; transform: scale(1); }
-    30% { background-position: 65% 45%; transform: scale(1.05); } 
-    40% { background-position: 65% 45%; transform: scale(1); }
-    50% { background-position: 10% 65%; transform: scale(1.02); } 
+    30% { background-position: 65% 45%; transform: scale(1.05); }
+    40% { background-position: 55% 45%; transform: scale(1); }
+    50% { background-position: 10% 65%; transform: scale(1.02); }
     60% { background-position: 10% 65%; transform: scale(1); }
-    100% { background-position: center center; transform: scale(1); }
 }
