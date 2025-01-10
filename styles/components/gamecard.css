@@ -107,6 +107,7 @@
 }
 
 @media all and (max-width: 1200px) {
+    .gamecard { height: 550px; }
     .gamecard h1 { font-size: 18px !important; }
     .gamecard p { font-size: calc(var(--font-size) - 2px) !important; }
 }
