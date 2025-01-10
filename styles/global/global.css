@@ -19,6 +19,7 @@ body {
     -moz-text-size-adjust: none;
     background-image: url(/images/body_bg.png);
     background-repeat: repeat;
+    background-position: center center;
 }
 
 html { scroll-behavior: smooth; }
