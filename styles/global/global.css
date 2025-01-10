@@ -17,6 +17,8 @@ body {
     -webkit-text-size-adjust: none; 
     -ms-text-size-adjust: none; 
     -moz-text-size-adjust: none;
+    background-image: url(/images/body_bg.png);
+    background-repeat: repeat;
 }
 
 html { scroll-behavior: smooth; }
