@@ -1,8 +1,8 @@
 :root {
     /* Colors */
     --theme: #95d40f;
-    --subtitle: #505050;
-    --subtitle-Bordercolor: #505050;
+    --title: #444;
+    --title-Bordercolor: #444;
     --footer: #666;
     --expert: #4773ba;
     --medium: #ff9100;

@@ -4,8 +4,8 @@ h1 {
     text-transform: uppercase;
     font-weight: 500;
     padding-left: 16px;
-    border-left: 10px solid var(--subtitle-Bordercolor);
-    color: var(--subtitle);
+    border-left: 10px solid var(--title-Bordercolor);
+    color: var(--title);
 }
 
 h2 {
@@ -62,7 +62,6 @@ button { font-size: var(--font-size); }
 p.footer *,
 p.footer b {
     font-size: var(--font-size);
-    text-align: center;
     font-weight: 300 !important; 
 }
 
