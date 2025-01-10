@@ -12,8 +12,8 @@
     transition: var(--card-transition);
 }
   
-.card:hover {
-    border: 1px solid var(--theme);
+.gamecard:hover {
+    scale: 1.05;
 }
   
 .card.active {
