@@ -65,7 +65,7 @@
 
 .gamecard i {
     align-self: flex-start;
-    font-size: 40px !important;
+    font-size: 50px !important;
     margin-right: 0 !important;
     display: inline-block;
     animation: jello 2s infinite;
