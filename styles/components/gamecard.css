@@ -87,7 +87,7 @@
 
 .gamecard p { 
     height: auto !important;
-    font-size: calc(var(--font-size) - 2px);
+    font-size: var(--font-size);
     font-weight: 300;
     line-height: 25px;
     color: #f9f9f9;
@@ -95,11 +95,11 @@
 }
 
 .gamecard span { 
-    font-size: calc(var(--font-size) - 2px);
+    font-size: var(--font-size);
     padding: 0 !important;
     font-weight: 300;
     font-style: italic;
-    color: #888;
+    color: var(--theme);
     align-self: flex-start;
     border-radius: 0 !important;
     border: 0 !important;
