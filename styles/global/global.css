@@ -17,16 +17,17 @@ body {
     -webkit-text-size-adjust: none; 
     -ms-text-size-adjust: none; 
     -moz-text-size-adjust: none;
-    background-image: url(/images/body_bg.png);
-    background-repeat: repeat;
-    background-position: center center;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
     padding: 25px 15px;
-    background-color: #222;
+    background-image: url(/images/body_bg.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #202020;
 }
 
 ul { list-style: none; }
