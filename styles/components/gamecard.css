@@ -64,6 +64,20 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
 }
 
+.gamecard i {
+    align-self: flex-start;
+    font-size: 40px !important;
+    margin-right: 0 !important;
+    display: inline-block;
+    animation: none !important;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.gamecard #elf { color: #c8ff00 !important; }
+.gamecard #dragon { color: #00ffff !important; }
+.gamecard #wizard { color: #f7003e !important; }
+
 .gamecard h1 {
     width: 100%;
     font-size: 20px;
