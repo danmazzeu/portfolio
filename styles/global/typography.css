@@ -4,7 +4,6 @@ h1 {
     text-transform: uppercase;
     font-weight: 500;
     padding-left: 16px;
-    width: 100%;
     border-left: 10px solid var(--subtitle-Bordercolor);
     color: var(--subtitle);
 }

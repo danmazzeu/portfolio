@@ -1,0 +1,87 @@
+.gamecard {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--card-background);
+}
+
+.gamecard:hover {
+    scale: 1.05;
+}
+
+.gamecard.active {
+    animation: var(--card-animation);
+    transform-origin: center;
+}
+
+.gamecard img {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    top: -50%; 
+    left: -50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 200%;
+    height: 200%;
+    object-fit: contain;
+    animation: rotate 2s linear infinite;
+}
+
+.gamecard-container {
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    margin: 15px;
+    border: 1px solid #333;
+    border-radius: var(--radius);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: move 20s linear infinite;
+}
+
+.gamecard-fade {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+}
+
+.gamecard h1 {
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-left: 0 !important;
+    border-left: 0 !important;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.gamecard p { 
+    height: auto !important;
+    font-size: calc(var(--font-size) - 2px);
+    font-weight: 300;
+    line-height: 25px;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 1px #000;
+}
+
+@media (max-width: 1200) {
+    .gamecard { height: 700px; }   
+}

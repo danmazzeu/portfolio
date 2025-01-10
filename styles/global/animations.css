@@ -19,3 +19,18 @@
     90% { transform:translateY(-3%) scale(1.03); }
     100% { transform:translateY(0) scale(1); }
 }
+
+@keyframes rotate {
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+@keyframes move {
+    10% { background-position: 15% 35%; transform: scale(1.03); } 
+    20% { background-position: 15% 35%; transform: scale(1); }
+    30% { background-position: 65% 45%; transform: scale(1.05); } 
+    40% { background-position: 65% 45%; transform: scale(1); }
+    50% { background-position: 10% 65%; transform: scale(1.02); } 
+    60% { background-position: 10% 65%; transform: scale(1); }
+    100% { background-position: center center; transform: scale(1); }
+}
