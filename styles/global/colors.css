@@ -1,7 +1,7 @@
 a { color: var(--theme); }
 input { color: var(--input); }
 button { color: var(--button); }
-i:not(.gamecard) { color: var(--theme); }
+i { color: var(--theme); }
 
 .footer-color { color: var(--footer); }
 .expert-color { color: var(--expert); }
