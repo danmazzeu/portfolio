@@ -47,7 +47,7 @@ button,
 select,
 a,
 i {
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 select {
