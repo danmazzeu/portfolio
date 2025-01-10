@@ -72,6 +72,7 @@
     animation: none !important;
     transform-origin: center;
     cursor: pointer;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .gamecard #elf { color: #c8ff00 !important; }
