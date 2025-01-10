@@ -19,7 +19,7 @@ playIcons.forEach(icon => {
                     otherIcon.classList.remove('bi-pause-circle-fill');
                     otherIcon.classList.add('bi-play-circle-fill');
                 });
-            
+
                 audioPlayer.pause();
             } else {
                 if (previouslyClickedIcon && previouslyClickedIcon !== icon) {
@@ -43,4 +43,18 @@ playIcons.forEach(icon => {
             previouslyClickedIcon = icon;
         }
     });
+
+    audioPlayer.addEventListener('ended', () => {
+        icon.classList.remove('bi-pause-circle-fill');
+        icon.classList.add('bi-play-circle-fill');
+        previouslyClickedIcon = null;
+    });
+});
+
+audioPlayer.addEventListener('ended', () => {
+    if (previouslyClickedIcon) {
+        previouslyClickedIcon.classList.remove('bi-pause-circle-fill');
+        previouslyClickedIcon.classList.add('bi-play-circle-fill');
+        previouslyClickedIcon = null; 
+    }
 });
