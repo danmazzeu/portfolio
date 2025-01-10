@@ -27,8 +27,8 @@
 
 @keyframes move {
     10% { 
-        background-position: 15% 35%; transform: scale(1.03); 
-        filter: saturate(150%) brightness(110%) contrast(110%)
+        background-position: center center; transform: scale(1); 
+        filter: saturate(100%) brightness(100%) contrast(100%)
     }
     25% { 
         background-position: 15% 45%; transform: scale(1); 
@@ -43,7 +43,7 @@
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
     100% { 
-        background-position: 10% 625%; transform: scale(1); 
+        background-position: center center; transform: scale(1); 
         filter: saturate(150%) brightness(110%) contrast(110%)
     }
 }
