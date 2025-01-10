@@ -40,7 +40,7 @@
     50% { 
         background-position: 30% 65%; 
         transform: scale(1.02); 
-        filter: saturate(130%) brightness(130%) contrast(130%); 
+        filter: saturate(150%) brightness(100%) contrast(110%); 
     }
     75% { 
         background-position: 55% 15%; 

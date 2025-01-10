@@ -68,15 +68,11 @@
     font-size: 40px !important;
     margin-right: 0 !important;
     display: inline-block;
-    animation: none !important;
+    animation: jello 2s infinite;
     transform-origin: center;
     cursor: pointer;
     text-shadow: 1px 1px 1px #000;
 }
-
-.gamecard #elf { color: #c8ff00 !important; }
-.gamecard #dragon { color: #00ffff !important; }
-.gamecard #wizard { color: #f7003e !important; }
 
 .gamecard h1 {
     width: 100%;
