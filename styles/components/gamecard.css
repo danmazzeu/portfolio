@@ -82,6 +82,18 @@
     text-shadow: 1px 1px 1px #000;
 }
 
+.gamecard span { 
+    font-size: calc(var(--font-size) - 2px);
+    padding: 0 !important;
+    font-weight: 300;
+    color: #888;
+    align-self: flex-start;
+    border-radius: 0 !important;
+    border: 0 !important;
+    text-shadow: 1px 1px 1px #000;
+    background-color: transparent !important;
+}
+
 @media (max-width: 1200) {
     .gamecard { height: 700px; }   
 }
