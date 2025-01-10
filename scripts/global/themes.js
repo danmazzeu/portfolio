@@ -1,6 +1,6 @@
 const themes = [
     '#c8ff00', // Lime
-    '#ff002f', // Light Orange
+    '#f7003e', // Red
     '#00ffff', // Light Blue
 ];
   
