@@ -118,7 +118,8 @@
 }
 
 @media all and (max-width: 1200px) {
-    .presentation-fade p { font-size: 15px; }
+    .presentation-fade p,
+    .presentation-fade span { font-size: 15px; }
     .presentation-video { top: -55%; }
     .presentation-wave-a { bottom: -50px; }
     .presentation-wave-b { bottom: -80px; }
@@ -131,7 +132,8 @@
 
 @media all and (max-width: 900px) {
     .presentation-fade h1 { font-size: 25px; }
-    .presentation-fade p { 
+    .presentation-fade p,
+    .presentation-fade span { 
         font-size: 14px;
         max-width: 220px;
     }
