@@ -32,7 +32,7 @@ $(document).ready(function() {
                 if (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) {
                     const responseText = data.candidates[0].content.parts[0].text.replace(/\*\*/g, "<br>");
                     let typedText = "";
-                    $('#ia-submit').attr('disabled', true).text('Respondendo...');
+                    $('#ia-submit').text('Respondendo...');
                     $('#ia-response').text('').fadeIn('fast');
             
                     for (let i = 0; i < responseText.length; i++) {
