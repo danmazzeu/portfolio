@@ -55,6 +55,7 @@
         <!-- Components Scripts -->
         <script defer src="scripts/components/year.js"></script>
         <script defer src="scripts/components/ia.js"></script>
+        <script defer src="scripts/components/shake.js"></script>
         <script defer src="scripts/components/whatsapp.js"></script>
         <script defer src="scripts/components/animation.js"></script>
         <script defer src="scripts/components/gamecard.js"></script>
@@ -70,7 +71,7 @@
                             <source src="videos/presentation.mp4" type="video/mp4">
                         </video>
                         <div class="presentation-fade">
-                            <img src="images/logo.png" />
+                            <img id="logo" src="images/logo.png" />
                             <h1>Daniel Mazzeu</h1>
                             <p>Explore um pouco dos meus conhecimentos e serviços prestados. Será um prazer me contectar com você!</p>
                         </div>
@@ -469,7 +470,7 @@
                         <form id="ia-form">
                             <input id="ia-input" type="text" placeholder="Sua pergunta" maxlength="500">
                             <button type="submit">Perguntar</button>
-                            <p id="ia-response"></p>
+                            <p id="ia-response" style="color: var(--theme);"></p>
                         </form>
                     </div>
                 </div>

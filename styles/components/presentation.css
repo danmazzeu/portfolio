@@ -50,6 +50,7 @@
 }
 
 .presentation-fade img {
+    cursor: pointer;
     align-self: flex-start;
     width: 70px;
     height: auto;
