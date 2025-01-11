@@ -31,13 +31,18 @@ span {
     background-color: #222 !important;
 }
 
-p {
+p, b {
     height: 100%;
     align-self: flex-start;
     font-size: var(--font-size);
     font-weight: 300;
     line-height: 25px;
     color: #f9f9f9;
+}
+
+b { 
+    font-weight: 500;
+    color: var(--theme); 
 }
 
 a {
