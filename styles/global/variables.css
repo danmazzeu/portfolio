@@ -4,9 +4,6 @@
     --title: #444;
     --title-Bordercolor: #444;
     --footer: #666;
-    --expert: #ff0048;
-    --medium: #00aaff;
-    --basic: #00ffbb;
     --instagram: #e1306c !important;
     --github: #fff !important;
     --input: #fff;
@@ -33,7 +30,7 @@
     --card-linkBorder: 1px dashed var(--theme);
     --card-spanBorder: 1px dashed var(--theme);
     --card-buttonPadding: 10px;
-    --card-inputBorder: 1px solid var(--theme);
+    --card-inputBorder: 1px solid #444;
 
     /* Video */
     --video-radius: var(--radius);

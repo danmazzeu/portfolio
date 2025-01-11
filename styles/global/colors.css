@@ -4,9 +4,6 @@ button { color: var(--button); }
 i { color: var(--theme); }
 
 .footer-color { color: var(--footer); }
-.expert-color { color: var(--expert); }
-.medium-color { color: var(--medium); }
-.basic-color { color: var(--basic); }
 
 .instagram-color { color: var(--instagram); }
 .facebook-color { color: var(--facebook); }
