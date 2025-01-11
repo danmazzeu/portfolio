@@ -5,7 +5,7 @@ $(document).ready(function() {
         $('#ia-response').text('Aguarde...').fadeIn('fast');
 
         const apiKey = 'AIzaSyCFT4N-asqp0JobkYYfe3ei-2q8ut6W7Cc';
-        const apiAnswer = $('#ia-input').val();
+        const apiAnswer = $('#ia-input').val().toLowerCase();
         let requestData;
 
         if (apiAnswer.includes('enigma')) {
