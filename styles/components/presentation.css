@@ -83,6 +83,7 @@
 }
 
 .presentation-fade span { 
+    max-width: 500px !important;
     font-size: var(--font-size);
     padding: 0 !important;
     font-weight: 300;
