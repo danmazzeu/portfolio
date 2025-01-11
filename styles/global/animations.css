@@ -31,7 +31,7 @@
 
 @keyframes move {
     0% {
-        background-position: 15% 1%; 
+        background-position: center center; 
         filter: saturate(100%) brightness(100%) contrast(100%);
     }
     10% { 
@@ -55,7 +55,7 @@
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
     100% { 
-        background-position: 50% 0%; 
+        background-position: center center; 
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
 }
