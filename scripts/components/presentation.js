@@ -9,5 +9,5 @@ document.getElementById('logo').addEventListener('click', () => {
     trocarVideo(videos[1]);
     setTimeout(() => {
         trocarVideo(videos[0]);
-    }, 12000);
+    }, 8000);
 });
