@@ -51,8 +51,9 @@
     height: auto;
     border-radius: var(--card-radius);
     box-shadow: var(--card-boxSahdow);
-    margin-bottom: 15px;
-    filter: saturate(120%) brightness(100%) contrast(107%);
+    margin-bottom: 20px;
+    animation: jello 2s infinite;
+    filter: saturate(120%) brightness(100%) contrast(108%);
 }
 
 .presentation-fade h1 {
