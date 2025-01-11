@@ -18,18 +18,18 @@
     transform-origin: center;
 }
 
-.gamecard img {
-    position: absolute;
-    z-index: 1;
-    overflow: hidden;
-    top: -50%; 
-    left: -50%;
-    transform: translate(-50%, -50%) rotate(0deg);
+.gamecard-gradient {
     width: 200%;
     height: 200%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom right, #333, #333, #333, #000, var(--theme), var(--theme), #333, #333, #333, #000);
+    transform: translate(-50%, -50%) rotate(0deg) skewY(-45deg);
     object-fit: contain;
-    animation: rotate 3s linear infinite;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 5)); 
+    animation: rotate 3s linear infinite; 
 }
 
 .gamecard-container {
