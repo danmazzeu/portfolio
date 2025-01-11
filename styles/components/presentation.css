@@ -111,7 +111,7 @@
 }
 
 @media all and (max-width: 900px) {
-    .presentation-video { bottom: -100px; }
+    .presentation-video { bottom: 0px; }
     .presentation-fade p {  margin-bottom: 100px; }
     .presentation-wave-a { bottom: -50px; }
     .presentation-wave-b { bottom: -80px; }
