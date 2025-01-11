@@ -4,8 +4,3 @@ button { color: var(--button); }
 i { color: var(--theme); }
 
 .footer-color { color: var(--footer); }
-
-.instagram-color { color: var(--instagram); }
-.facebook-color { color: var(--facebook); }
-.github-color { color: var(--github); }
-.linkedin-color { color: var(--linkedin); }
