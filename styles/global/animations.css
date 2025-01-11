@@ -31,31 +31,31 @@
 
 @keyframes move {
     0% {
-        background-position: center center; 
+        background-position: 15% 1%; 
         filter: saturate(100%) brightness(100%) contrast(100%);
     }
     10% { 
-        background-position: 15% 45%; 
+        background-position: 15% 4%; 
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
     25% { 
-        background-position: 25% 35%; 
+        background-position: 25% 3%; 
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
     50% { 
-        background-position: 30% 65%; 
+        background-position: 30% 6%; 
         filter: saturate(150%) brightness(100%) contrast(110%); 
     }
     75% { 
-        background-position: 55% 15%; 
+        background-position: 55% 2%; 
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
     90% { 
-        background-position: 45% 25%; 
+        background-position: 45% 5%; 
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
     100% { 
-        background-position: 50% 55%; 
+        background-position: 50% 0%; 
         filter: saturate(100%) brightness(100%) contrast(100%); 
     }
 }

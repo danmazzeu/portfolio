@@ -5,6 +5,7 @@ const audioData = [
     { id: 'elf', src: 'audios/elf.mp3' },
     { id: 'dragon', src: 'audios/dragon.mp3' },
     { id: 'wizard', src: 'audios/wizard.mp3' },
+    { id: 'forest', src: 'audios/forest.mp3' },
 ];
 
 let previouslyClickedIcon = null;
