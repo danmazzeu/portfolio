@@ -88,6 +88,7 @@
     z-index: 3;
     bottom: -70px;
     left: -100px;
+    opacity: 0.5;
     box-shadow: 1px 1px 1px #000;
     transform-origin: left center;
     animation: wave 5s ease-in-out infinite;
