@@ -2,8 +2,7 @@ $(document).ready(function() {
 
     $('#ia-form').submit(function(e) { 
         e.preventDefault();
-        $('#ia-submit').attr('disabled', true).text('Respondendo...');
-        $('#ia-response').text('Aguarde...').fadeIn('fast');
+        $('#ia-submit').attr('disabled', true).text('Aguarde...');
 
         const apiKey = 'AIzaSyCFT4N-asqp0JobkYYfe3ei-2q8ut6W7Cc';
         const apiAnswer = $('#ia-input').val().toLowerCase();
@@ -33,6 +32,8 @@ $(document).ready(function() {
                 if (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) {
                     const responseText = data.candidates[0].content.parts[0].text.replace(/\*\*/g, "<br>");
                     let typedText = "";
+                    $('#ia-submit').attr('disabled', true).text('Respondendo...');
+                    $('#ia-response').text('').fadeIn('fast');
             
                     for (let i = 0; i < responseText.length; i++) {
                         setTimeout(function() {
@@ -56,10 +57,6 @@ $(document).ready(function() {
                 console.error("Error:", textStatus, errorThrown);
             }
         });
-    });
-
-    $('#ia-stop').click(function() { 
-
     });
 
 });
