@@ -85,7 +85,7 @@
 .presentation-fade span { 
     font-size: var(--font-size);
     padding: 0 !important;
-    font-weight: 600;
+    font-weight: 300;
     font-style: italic;
     color: var(--theme);
     align-self: flex-start;
