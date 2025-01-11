@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (apiAnswer.includes('enigma')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Existe um arquivo html na raiz, cujo nome você ouvira em algum lugar desta página, lá você encontrará os próximos passos.' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Existe um arquivo html na raiz, cujo nome você ouvira em algum lugar desta página, lá você encontrará os próximos passos. Deixe a imaginação fluir!' }]
                 }]
             };
           } else {
