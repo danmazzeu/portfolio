@@ -52,6 +52,7 @@
     border-radius: var(--card-radius);
     box-shadow: var(--card-boxSahdow);
     margin-bottom: 15px;
+    filter: saturate(120%) brightness(100%) contrast(107%);
 }
 
 .presentation-fade h1 {
@@ -99,6 +100,7 @@
 }
 
 @media all and (max-width: 1200px) {
+    .presentation-fade p { font-size: 15px; }
     .presentation-video { top: -55%; }
     .presentation-fade p { margin-bottom: 100px; }
     .presentation-wave-a { bottom: -50px; }
@@ -111,6 +113,11 @@
 }
 
 @media all and (max-width: 900px) {
+    .presentation-fade h1 { font-size: 25px; }
+    .presentation-fade p { 
+        font-size: 14px;
+        max-width: 220px;
+    }
     .presentation-video { top: -10%; }
     .presentation-fade p {  margin-bottom: 100px; }
     .presentation-wave-a { bottom: -50px; }
