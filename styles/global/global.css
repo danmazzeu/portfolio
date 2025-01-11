@@ -52,6 +52,7 @@ select,
 a,
 i {
     -webkit-tap-highlight-color: transparent !important;
+    text-emphasis-color: transparent !important;
 }
 
 select {
