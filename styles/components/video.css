@@ -10,7 +10,7 @@ video {
 }
 
 video:hover {
-    border: 1px solid var(--theme);
+    scale: 1.05;
 }
 
 video.active {
