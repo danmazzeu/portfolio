@@ -2,7 +2,7 @@ $(document).ready(function() {
     let delay = 0;
 
     $(window).scroll(function() {
-        $('.card, video').each(function() {
+        $('.card, .presentation, video').each(function() {
             var $this = $(this);
             var viewportTop = $(window).scrollTop() + $(window).height() / 2 - $this.outerHeight();
             var viewportBottom = viewportTop + $this.outerHeight(); 
