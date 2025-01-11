@@ -26,5 +26,5 @@ logo.addEventListener('click', () => {
         shakeElements.forEach(el => {
             el.classList.remove('shake');
         });
-    }, 2000);
+    }, 8000);
 });
