@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (apiAnswer.includes('enigma')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Existe uma criatura, que ao navegar por ela você irá chegar em seu destino, seu som pode ser ouvido clicando em algum lugar desta página, lá você encontrará os próximos passos. Deixe a imaginação fluir!' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Uma melodia secreta ecoa nesta página, pronta para conduzi-lo ao seu destino. Mas ouça atentamente, pois uma criatura falsa tentará te seduzir. Deixe a imaginação navegar e siga a trilha sonora da sua alma. Ao final, encontrará os próximos passos.' }]
                 }]
             };
           } else {
