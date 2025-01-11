@@ -26,7 +26,7 @@
     position: absolute;
     z-index: 1;
     left: -5%;
-    top: -100%;
+    top: -70%;
     min-width: 110%;
     min-height: 100%;
 }
@@ -124,7 +124,10 @@
         font-size: 14px;
         max-width: 220px;
     }
-    .presentation-video { top: -10%; }
+    .presentation-video { 
+        top: -10%; 
+        min-height: 120%;
+    }
     .presentation-wave-a { bottom: -120px; }
     .presentation-wave-b { bottom: -80px; }
     .presentation-wave-a,
