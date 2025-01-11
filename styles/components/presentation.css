@@ -83,6 +83,19 @@
     margin-bottom: 15px;
 }
 
+.presentation-fade span { 
+    font-size: var(--font-size);
+    padding: 0 !important;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--theme);
+    align-self: flex-start;
+    border-radius: 0 !important;
+    border: 0 !important;
+    text-shadow: 1px 1px 1px #000;
+    background-color: transparent !important;
+}
+
 .presentation-wave-a {
     width: 1500px;
     position: absolute;
