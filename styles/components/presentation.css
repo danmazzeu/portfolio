@@ -68,7 +68,7 @@
 .presentation-fade p { 
     max-width: 500px;
     height: auto !important;
-    font-size: calc(var(--font-size) + 4px);
+    font-size: calc(var(--font-size) + 2px);
     font-weight: 300;
     line-height: 25px;
     color: #f9f9f9;
