@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (apiAnswer.includes('enigma')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Um rugido secreto ecoa nesta página, pronta para conduzi-lo(a) ao seu destino. **Mas ouça atentamente, pois uma criatura falsa tentará te seduzir. **Tenha visão, use sua intuição. **Deixe a imaginação navegar. **Ao final, encontrará os próximos passos.' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Um rugido secreto ecoa nesta página, pronta para conduzi-lo(a) ao seu destino. **Mas ouça atentamente, pois uma criatura falsa tentará te seduzir. **Tenha visão, use sua intuição. **Deixe a imaginação NAVEGAR. **Ao final, encontrará os próximos passos.' }]
                 }]
             };
           } else {
