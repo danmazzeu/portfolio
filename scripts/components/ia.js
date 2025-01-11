@@ -6,12 +6,21 @@ $(document).ready(function() {
 
         const apiKey = 'AIzaSyCFT4N-asqp0JobkYYfe3ei-2q8ut6W7Cc';
         const apiAnswer = $('#ia-input').val();
+        let requestData;
 
-        const requestData = {
-            contents: [{
-                parts: [{ text: 'Responder em português: ' + apiAnswer }]
-            }]
-        };
+        if (apiAnswer.includes('enigma')) {
+            requestData = {
+                contents: [{
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Existe um arquivo html na raiz, cujo nome é tão óbvio quanto o próprio local, lá você encontrará os próximos passos.' }]
+                }]
+            };
+          } else {
+            requestData = {
+                contents: [{
+                    parts: [{ text: 'Responder em português: ' + apiAnswer }]
+                }]
+            };
+        }
     
         $.ajax({
             url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + apiKey,
