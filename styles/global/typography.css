@@ -59,10 +59,12 @@ h2.special > i { font-size: calc(var(--font-size) + 10px); }
 input { font-size: var(--font-size); }
 button { font-size: var(--font-size); }
 
-p.footer *,
+p.footer,
 p.footer b {
     font-size: var(--font-size);
-    font-weight: 300 !important; 
+    font-weight: 300 !important;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000 !important;
 }
 
 @media all and (max-width: 1200px) {
