@@ -17,7 +17,7 @@ $(document).ready(function() {
         if (apiAnswer.includes('cobra') || apiAnswer.includes('serpente')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Hahahahaha. ** Muito obvio não é mesmo!? ** Sou apenas uma distração, quem você procura, está trancada graças a minha armadilha! ** Esperando a anos por ajuda...'}]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Hahahaha!. ** Muito obvio não é mesmo!? ** Sou apenas uma distração, quem você procura, está trancada graças a minha armadilha! ** Esperando a anos por ajuda...'}]
                 }]
             };
             audioName = '/audios/enigma_5.mp3';
