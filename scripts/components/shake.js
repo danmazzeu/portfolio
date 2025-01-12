@@ -1,8 +1,13 @@
 $(document).ready(function() {
     const logo = document.getElementById('logo');
     const shakeElements = document.querySelectorAll('section');
-    const audioContext = new (window.AudioContext || window.AudioContext)();
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)(); // Use webkitAudioContext for older browsers
     let audioSource;
+
+    const blackScreen = $('.black-screen');
+    const elementPhrase = $('.black-screen p');
+    const phrase = "Peça para a DAN.IA te dar alguma dica...";
+    let i = 0;
 
     logo.addEventListener('click', () => {
         if (audioSource) {
@@ -13,51 +18,37 @@ $(document).ready(function() {
             .then(response => response.arrayBuffer())
             .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
             .then(audioBuffer => {
-            audioSource = audioContext.createBufferSource();
-            audioSource.buffer = audioBuffer;
-            audioSource.connect(audioContext.destination);
-            audioSource.start();
-        });
+                audioSource = audioContext.createBufferSource();
+                audioSource.buffer = audioBuffer;
+                audioSource.connect(audioContext.destination);
+                audioSource.start();
+            });
 
         shakeElements.forEach(el => {
             el.classList.add('shake');
         });
 
+        function typer() {
+            if (i < phrase.length) {
+                elementPhrase.append(phrase[i++]);
+                setTimeout(typer, 50);
+            }
+        }
+
         setTimeout(() => {
             shakeElements.forEach(el => {
                 el.classList.remove('shake');
             });
-        }, 8000);
-    });
 
-    let clickCounter = 0;
-    const blackScreen = $('.black-screen');
-    const elementPhrase = $('.black-screen p');
-    const phrase = "Peça para a DAN.IA te dar alguma dica...";
-
-    $('#logo').click(function() {
-        clickCounter++;
-
-        if (clickCounter === 2) {
-            let i = 0;
-
-            function typer() {
-                if (i < phrase.length) {
-                    elementPhrase.append(phrase[i++]);
-                    setTimeout(typer, 50);
-                }
-            }
-
+            blackScreen.fadeIn(500).css('display', 'flex');
+            i = 0;
+            elementPhrase.text('');
             typer();
 
-            blackScreen.css('display', 'flex');
-
             setTimeout(() => {
-                blackScreen.fadeOut(3000);
+                blackScreen.fadeOut(1000);
             }, (phrase.length * 100) + 500);
+        }, 8000);
 
-            clickCounter = 0;
-        }
     });
-
 });
