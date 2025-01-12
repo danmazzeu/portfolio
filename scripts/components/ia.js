@@ -8,7 +8,14 @@ $(document).ready(function() {
         const apiAnswer = $('#ia-input').val().toLowerCase();
         let requestData;
 
-        if (apiAnswer.includes('criatura')) {
+
+        if (apiAnswer.includes('dragao ancestral')) {
+            requestData = {
+                contents: [{
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou. ** Fiquei anos trancado nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a floresta labirinto! ** Estou imensamente grato pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor.' }]
+                }]
+            };
+        } else if (apiAnswer.includes('criatura')) {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Talvez essa seja a chave para desvendar o enigma.' }]
