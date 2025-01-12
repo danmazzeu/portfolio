@@ -53,7 +53,7 @@ $(document).ready(function() {
             blackScreen.css('display', 'flex');
 
             setTimeout(() => {
-                blackScreen.fadeOut(5000);
+                blackScreen.fadeOut(3000);
             }, (phrase.length * 100) + 500);
 
             clickCounter = 0;
