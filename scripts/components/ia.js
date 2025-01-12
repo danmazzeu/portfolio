@@ -25,11 +25,11 @@ $(document).ready(function() {
                 shakeElements.forEach(el => {
                     el.classList.remove('shake');
                 });
-            }, 3000);
+            }, 8000);
             if (audioSource) {
                 audioSource.stop(); 
             }
-            fetch('/audios/logo.mp3')
+            fetch('/audios/ancestral.mp3')
                 .then(response => response.arrayBuffer())
                 .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
                 .then(audioBuffer => {
