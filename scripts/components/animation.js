@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     $('.card, .feedcard, .gamecard, .presentation, video').each(function() {
         const audio = new Audio('/audios/cards.mp3');
-        audio.volume = 0.3;
+        audio.volume = 0.4;
 
         $(this).mouseover(function() {
             audio.play();
