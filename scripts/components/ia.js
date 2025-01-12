@@ -10,6 +10,7 @@ $(document).ready(function() {
         const shakeElements = document.querySelectorAll('section');
         const audioContext = new (window.AudioContext || window.webkitAudioContext)();
         let audioSource;
+        let audioName;
 
 
         if (apiAnswer.includes('ancestral')) {
@@ -26,90 +27,35 @@ $(document).ready(function() {
                     el.classList.remove('shake');
                 });
             }, 8000);
-            if (audioSource) {
-                audioSource.stop(); 
-            }
-            fetch('/audios/enigma_4.mp3')
-                .then(response => response.arrayBuffer())
-                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
-                .then(audioBuffer => {
-                    audioSource = audioContext.createBufferSource();
-                    audioSource.buffer = audioBuffer;
-                    audioSource.connect(audioContext.destination);
-                    audioSource.start();
-                });
+            audioName = '/audios/enigma_4.mp3';
         } else if (apiAnswer.includes('criatura')) {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Repita exatamente a seguinte frase: Existe um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Encontrei um papel, estava escrito isso, talvez essa seja a chave para desvendar o enigma: ** ?criatura=' }]
                 }]
             };
-            if (audioSource) {
-                audioSource.stop(); 
-            }
-            fetch('/audios/enigma_3.mp3')
-                .then(response => response.arrayBuffer())
-                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
-                .then(audioBuffer => {
-                    audioSource = audioContext.createBufferSource();
-                    audioSource.buffer = audioBuffer;
-                    audioSource.connect(audioContext.destination);
-                    audioSource.start();
-                });
+            audioName = '/audios/enigma_3.mp3';
         } else if (apiAnswer.includes('dica')) {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Repita exatamente a seguinte frase: Ei!! Você também ouviu o som assustador? ** O caminho para o enigma possui uma extensão. ** Preste atenção nas palavras, você está próximo(a)! ** Vasculhe o código-fonte, deixei algo escrito lá para você.' }]
                 }]
             };
-            if (audioSource) {
-                audioSource.stop(); 
-            }
-            fetch('/audios/enigma_2.mp3')
-                .then(response => response.arrayBuffer())
-                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
-                .then(audioBuffer => {
-                    audioSource = audioContext.createBufferSource();
-                    audioSource.buffer = audioBuffer;
-                    audioSource.connect(audioContext.destination);
-                    audioSource.start();
-                });
+            audioName = '/audios/enigma_2.mp3';
         } else if (apiAnswer.includes('enigma')) {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Repita exatamente a seguinte frase: Um rugido secreto ecoa nesta página, pronta para conduzi-lo(a) ao seu destino. ** Ouça atentamente, pois uma criatura falsa tentará te seduzir. ** Tenha visão, use sua intuição. ** Deixe a imaginação NAVEGAR. ** Ao final, encontrará os próximos passos.' }]
                 }]
             };
-            if (audioSource) {
-                audioSource.stop(); 
-            }
-            fetch('/audios/enigma_1.mp3')
-                .then(response => response.arrayBuffer())
-                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
-                .then(audioBuffer => {
-                    audioSource = audioContext.createBufferSource();
-                    audioSource.buffer = audioBuffer;
-                    audioSource.connect(audioContext.destination);
-                    audioSource.start();
-                });
+            audioName = '/audios/enigma_1.mp3';
         } else {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Responder em português: ' + apiAnswer }]
                 }]
             };
-            if (audioSource) {
-                audioSource.stop(); 
-            }
-            fetch('/audios/ia.mp3')
-                .then(response => response.arrayBuffer())
-                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
-                .then(audioBuffer => {
-                    audioSource = audioContext.createBufferSource();
-                    audioSource.buffer = audioBuffer;
-                    audioSource.connect(audioContext.destination);
-                    audioSource.start();
-                });
+            audioName = '/audios/ia.mp3';
         }
     
         $.ajax({
@@ -124,6 +70,19 @@ $(document).ready(function() {
                     let typedText = "";
                     $('#ia-submit').text('Respondendo...');
                     $('#ia-response').text('').fadeIn('fast');
+
+                    if (audioSource) {
+                        audioSource.stop(); 
+                    }
+                    fetch(audioName)
+                        .then(response => response.arrayBuffer())
+                        .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+                        .then(audioBuffer => {
+                            audioSource = audioContext.createBufferSource();
+                            audioSource.buffer = audioBuffer;
+                            audioSource.connect(audioContext.destination);
+                            audioSource.start();
+                        });
             
                     for (let i = 0; i < responseText.length; i++) {
                         setTimeout(function() {
