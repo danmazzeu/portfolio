@@ -9,10 +9,16 @@ $(document).ready(function() {
         let requestData;
 
 
-        if (apiAnswer.includes('dragao ancestral')) {
+        if (apiAnswer.includes('dragão ancestral')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou. ** Fiquei anos trancado nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a floresta labirinto! ** Estou imensamente grato pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor.' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou. ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída.' }]
+                }]
+            };
+        } else if (apiAnswer.includes('dragao ancestral')) {
+            requestData = {
+                contents: [{
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou. ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída.' }]
                 }]
             };
         } else if (apiAnswer.includes('criatura')) {
