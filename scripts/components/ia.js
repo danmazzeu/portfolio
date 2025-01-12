@@ -32,7 +32,7 @@ $(document).ready(function() {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Repita exatamente a seguinte frase: Existe um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Encontrei um papel, estava escrito isso, talvez essa seja a chave para desvendar o enigma: ** ?criatura=' }]
-                }]
+                }],
             };
             audioName = '/audios/enigma_3.mp3';
         } else if (apiAnswer.includes('dica')) {
@@ -52,8 +52,8 @@ $(document).ready(function() {
         } else {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Responder em português: ' + apiAnswer }]
-                }]
+                    parts: [{ text: 'Responda: ' + apiAnswer }]
+                }],
             };
             audioName = '/audios/ia.mp3';
         }
