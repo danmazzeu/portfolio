@@ -80,6 +80,18 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Um rugido secreto ecoa nesta página, pronta para conduzi-lo(a) ao seu destino. ** Ouça atentamente, pois uma criatura falsa tentará te seduzir. ** Tenha visão, use sua intuição. ** Deixe a imaginação NAVEGAR. ** Ao final, encontrará os próximos passos.' }]
                 }]
             };
+            if (audioSource) {
+                audioSource.stop(); 
+            }
+            fetch('/audios/enigma_1.mp3')
+                .then(response => response.arrayBuffer())
+                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+                .then(audioBuffer => {
+                    audioSource = audioContext.createBufferSource();
+                    audioSource.buffer = audioBuffer;
+                    audioSource.connect(audioContext.destination);
+                    audioSource.start();
+                });
         } else {
             requestData = {
                 contents: [{
