@@ -18,7 +18,7 @@ $(document).ready(function() {
         } else if (apiAnswer.includes('criatura')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Talvez essa seja a chave para desvendar o enigma. ** ?criatura=' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Talvez essa seja a chave para desvendar o enigma: ** ?criatura=' }]
                 }]
             };
         } else if (apiAnswer.includes('dica')) {
@@ -49,7 +49,7 @@ $(document).ready(function() {
             data: JSON.stringify(requestData),
             success: function(data) {
                 if (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) {
-                    const responseText = data.candidates[0].content.parts[0].text.replace(/\*\*/g, "<br>");
+                    const responseText = data.candidates[0].content.parts[0].text.replace(/\*\*/g, "<br />");
                     let typedText = "";
                     $('#ia-submit').text('Respondendo...');
                     $('#ia-response').text('').fadeIn('fast');
