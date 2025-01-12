@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (apiAnswer.includes('criatura')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz do meu projeto, ele possui um nome. ** Talvez você me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem...' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz do meu projeto, ele possui um nome. ** Talvez você me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar.' }]
                 }]
             };
         } else if (apiAnswer.includes('dica')) {
