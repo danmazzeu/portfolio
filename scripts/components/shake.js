@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('#logo').click(function() {
         clickCounter++;
 
-        if (clickCounter === 3) {
+        if (clickCounter === 2) {
             let i = 0;
 
             function typer() {
