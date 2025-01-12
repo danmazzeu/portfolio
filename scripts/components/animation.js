@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         const audio = $('audio#scrollbarAudio').length ? $('audio#scrollbarAudio')[0] : new Audio('/audios/scrollbar.mp3');
-        audio.volume = 0.5;
+        audio.volume = 0.4;
 
         if (!audio.id) {
             audio.id = 'scrollbarAudio';
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     $('.card, .feedcard, .gamecard, .presentation, video').each(function() {
         const audio = new Audio('/audios/cards.mp3');
-        audio.volume = 0.3;
+        audio.volume = 0.2;
 
         $(this).mouseover(function() {
             audio.play();
