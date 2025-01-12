@@ -33,6 +33,7 @@ span {
 
 p:not(.black-screen p)
 p.footer,
+p, 
 b {
     height: 100%;
     align-self: flex-start;
