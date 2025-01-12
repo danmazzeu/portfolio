@@ -7,18 +7,37 @@ $(document).ready(function() {
         const apiKey = 'AIzaSyCFT4N-asqp0JobkYYfe3ei-2q8ut6W7Cc';
         const apiAnswer = $('#ia-input').val().toLowerCase();
         let requestData;
+        const shakeElements = document.querySelectorAll('section');
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        let audioSource;
 
 
         if (apiAnswer.includes('ancestral')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou! ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída. ** Vá em paz buscador(a).'}]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou! ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação fosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída. ** Vá em paz buscador(a).'}]
                 }]
             };
-            const shakeElements = document.querySelectorAll('section');
             shakeElements.forEach(el => {
                 el.classList.add('shake');
             });
+            setTimeout(() => {
+                shakeElements.forEach(el => {
+                    el.classList.remove('shake');
+                });
+            }, 3000);
+            if (audioSource) {
+                audioSource.stop(); 
+            }
+            fetch('/audios/logo.mp3')
+                .then(response => response.arrayBuffer())
+                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+                .then(audioBuffer => {
+                    audioSource = audioContext.createBufferSource();
+                    audioSource.buffer = audioBuffer;
+                    audioSource.connect(audioContext.destination);
+                    audioSource.start();
+                });
         } else if (apiAnswer.includes('criatura')) {
             requestData = {
                 contents: [{
