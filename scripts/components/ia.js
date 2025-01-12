@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    const audioContext = new (window.AudioContext || window.AudioContext)();
+    let audioSource;
+    let audioName;
+
     $('#ia-form').submit(function(e) { 
         e.preventDefault();
         $('#ia-submit').attr('disabled', true).text('Aguarde...');
@@ -8,9 +12,6 @@ $(document).ready(function() {
         const apiAnswer = $('#ia-input').val().toLowerCase();
         let requestData;
         const shakeElements = document.querySelectorAll('section');
-        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        let audioSource;
-        let audioName;
 
 
         if (apiAnswer.includes('ancestral')) {
