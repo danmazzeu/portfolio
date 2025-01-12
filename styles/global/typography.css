@@ -31,7 +31,9 @@ span {
     background-color: #222 !important;
 }
 
-p:not(.black-screen p), b {
+p:not(.black-screen p)
+p.footer,
+b {
     height: 100%;
     align-self: flex-start;
     font-size: var(--font-size);
