@@ -105,6 +105,9 @@ textarea:disabled {
     align-self: center !important;
     font-size: 17px;
     font-weight: 500;
+    max-width: 200px;
+    line-height: 30px;
     color: var(--theme);
+    text-align: center !important;
     text-shadow: 1px 1px 1px #000;
 }
