@@ -98,6 +98,18 @@ $(document).ready(function() {
                     parts: [{ text: 'Responder em português: ' + apiAnswer }]
                 }]
             };
+            if (audioSource) {
+                audioSource.stop(); 
+            }
+            fetch('/audios/ia.mp3')
+                .then(response => response.arrayBuffer())
+                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+                .then(audioBuffer => {
+                    audioSource = audioContext.createBufferSource();
+                    audioSource.buffer = audioBuffer;
+                    audioSource.connect(audioContext.destination);
+                    audioSource.start();
+                });
         }
     
         $.ajax({
