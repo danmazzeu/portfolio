@@ -51,7 +51,8 @@ textarea,
 button,
 select,
 a,
-i {
+i,
+img {
     -webkit-tap-highlight-color: transparent !important;
     text-emphasis-color: transparent !important;
 }
