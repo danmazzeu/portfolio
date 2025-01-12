@@ -29,7 +29,7 @@ $(document).ready(function() {
             if (audioSource) {
                 audioSource.stop(); 
             }
-            fetch('/audios/ancestral.mp3')
+            fetch('/audios/enigma_4.mp3')
                 .then(response => response.arrayBuffer())
                 .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
                 .then(audioBuffer => {
@@ -44,12 +44,36 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Existe um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Encontrei um papel, estava escrito isso, talvez essa seja a chave para desvendar o enigma: ** ?criatura=' }]
                 }]
             };
+            if (audioSource) {
+                audioSource.stop(); 
+            }
+            fetch('/audios/enigma_3.mp3')
+                .then(response => response.arrayBuffer())
+                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+                .then(audioBuffer => {
+                    audioSource = audioContext.createBufferSource();
+                    audioSource.buffer = audioBuffer;
+                    audioSource.connect(audioContext.destination);
+                    audioSource.start();
+                });
         } else if (apiAnswer.includes('dica')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Ei!! Você também ouviu o som assustados? ** O caminho para o enigma possui uma extensão. ** Preste atenção nas palavras, você está próximo(a)! ** Vasculhe o código-fonte, deixei algo escrito lá para você.' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Ei!! Você também ouviu o som assustador? ** O caminho para o enigma possui uma extensão. ** Preste atenção nas palavras, você está próximo(a)! ** Vasculhe o código-fonte, deixei algo escrito lá para você.' }]
                 }]
             };
+            if (audioSource) {
+                audioSource.stop(); 
+            }
+            fetch('/audios/enigma_2.mp3')
+                .then(response => response.arrayBuffer())
+                .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+                .then(audioBuffer => {
+                    audioSource = audioContext.createBufferSource();
+                    audioSource.buffer = audioBuffer;
+                    audioSource.connect(audioContext.destination);
+                    audioSource.start();
+                });
         } else if (apiAnswer.includes('enigma')) {
             requestData = {
                 contents: [{
