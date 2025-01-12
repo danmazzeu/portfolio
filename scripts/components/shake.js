@@ -49,6 +49,6 @@ $(document).ready(function() {
         setTimeout(() => {
             elementPhrase.text('');
             typer('"Consigo ouvir um som próximo"'); 
-        }, 15000);
+        }, 16000);
     });
 });
