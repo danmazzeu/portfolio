@@ -101,9 +101,11 @@ textarea:disabled {
     background-color: #000;
     display: flex !important;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
+    padding: 35px;
 }
 
-.black-screen p { color: var(--theme) !important; }
+.black-screen p { 
+    justify-self: center;
+    align-self: center;
+    color: var(--theme);
+}
