@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 30px;
+    padding: 40px;
     background: rgb(0,0,0);
     background: -moz-linear-gradient(0deg, rgba(26,26,26,0.9) 30%, rgba(0,0,0,0.4) 100%);
     background: -webkit-linear-gradient(0deg, rgba(26,26,26,0.9) 30%, rgba(0,0,0,0.4) 100%);
@@ -141,11 +141,11 @@
         top: -10%; 
         min-height: 120%;
     }
-    .presentation-wave-a { bottom: -120px; }
-    .presentation-wave-b { bottom: -80px; }
+    .presentation-wave-a { bottom: -130px; }
+    .presentation-wave-b { bottom: -120px; }
     .presentation-wave-a,
     .presentation-wave-b {
-        width: 1200px;
+        width: 1100px;
         left: -200px;
     }
 }
