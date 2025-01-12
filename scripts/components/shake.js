@@ -5,12 +5,12 @@ $(document).ready(function() {
     let audioSource;
 
     const elementPhrase = $('.presentation-fade span');
-    const phrase = '"Peça para a DAN.IA te dar alguma dica sobre o enigma"';
-    let i = 0;
 
     logo.addEventListener('click', () => {
+        elementPhrase.text('');
+
         if (audioSource) {
-            audioSource.stop();
+            audioSource.stop(); 
         }
 
         fetch('/audios/logo.mp3')
@@ -27,22 +27,28 @@ $(document).ready(function() {
             el.classList.add('shake');
         });
 
-        function typer() {
-            if (i < phrase.length) {
-                elementPhrase.append(phrase[i++]);
-                setTimeout(typer, 50);
-            }
+        function typer(phrase) {
+            let i = 0;
+            const typeInterval = setInterval(() => {
+                if (i < phrase.length) {
+                    elementPhrase.append(phrase[i++]);
+                } else {
+                    clearInterval(typeInterval); 
+                }
+            }, 50); 
         }
+
+        typer('"Peça para a DAN.IA te dar alguma dica sobre o enigma"');
 
         setTimeout(() => {
             shakeElements.forEach(el => {
                 el.classList.remove('shake');
             });
-
-            i = 0;
-            elementPhrase.text('');
-            typer();
         }, 8000);
 
+        setTimeout(() => {
+            elementPhrase.text('');
+            typer('"Consigo ouvir um som próximo"'); 
+        }, 15000);
     });
 });
