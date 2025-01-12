@@ -17,6 +17,7 @@ body {
     -webkit-text-size-adjust: none; 
     -ms-text-size-adjust: none; 
     -moz-text-size-adjust: none;
+    overflow-x: hidden;
 }
 
 html { scroll-behavior: smooth; }
@@ -96,6 +97,7 @@ textarea:disabled {
     position: fixed;
     top: 0;
     left: 0;
+    overflow: hidden;
     z-index: 10;
     width: 100vw;
     height: 100vh;
