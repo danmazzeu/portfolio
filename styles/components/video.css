@@ -4,9 +4,10 @@ video {
     padding: var(--video-padding);
     object-fit: cover;
     object-position: center;
+    transition: var(--video-transition);
     border-radius: var(--video-radius);
-    border: var(--video-border);
     box-shadow: var(--video-boxShadow);
+    background-color: var(--video-background);
 }
 
 video:hover {

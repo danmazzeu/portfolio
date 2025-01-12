@@ -4,6 +4,7 @@
     overflow: hidden;
     width: 100%;
     height: 600px;
+    transition: var(--card-transition);
     border-radius: var(--radius);
     box-shadow: var(--box-shadow);
     background-color: var(--card-background);

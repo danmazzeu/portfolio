@@ -6,7 +6,6 @@
     height: 100%;
     padding: var(--card-padding);
     border-radius: var(--card-radius);
-    border: var(--card-border);
     background-color: var(--card-background);
     box-shadow: var(--card-boxSahdow);
     transition: var(--card-transition);

@@ -1,8 +1,8 @@
 :root {
     /* Colors */
     --theme: #71fe00;
-    --title: #444;
-    --title-Bordercolor: #444;
+    --title: #71fe00;
+    --title-borderColor: #71fe00;
     --footer: #666;
     --instagram: #e1306c !important;
     --github: #fff !important;
@@ -21,10 +21,9 @@
     --card-gap: 15px;
     --card-padding: 20px;
     --card-radius: var(--radius);
-    --card-border: 1px solid #303030;
     --card-background: #232323;
     --card-boxSahdow: var(--box-shadow);
-    --card-transition: all 0.2s ease-in-out;
+    --card-transition: all 0.3s ease-in-out;
     --card-animation: var(--animation);
     --card-linkPadding: 10px 15px;
     --card-linkBorder: 1px dashed var(--theme);
@@ -34,9 +33,10 @@
 
     /* Video */
     --video-radius: var(--radius);
-    --video-border: 1px solid #303030;
     --video-boxShadow: var(--box-shadow);
     --video-hoverScale: var(--scale);
     --video-animation: var(--animation);
     --video-padding: 10px;
+    --video-background: #232323;
+    --video-transition: all 0.3s ease-in-out;
 }
