@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (apiAnswer.includes('dica')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Ei!! Você também ouviu o som assustados? **O caminho para o enigma possui uma extensão. **Preste atenção nas palavras.' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Ei!! Você também ouviu o som assustados? **O caminho para o enigma possui uma extensão. **Preste atenção nas palavras, você está quase lá!' }]
                 }]
             };
         } else if (apiAnswer.includes('enigma')) {
