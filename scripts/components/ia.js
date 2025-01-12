@@ -8,7 +8,13 @@ $(document).ready(function() {
         const apiAnswer = $('#ia-input').val().toLowerCase();
         let requestData;
 
-        if (apiAnswer.includes('dica')) {
+        if (apiAnswer.includes('criatura')) {
+            requestData = {
+                contents: [{
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz do meu projeto, ele possui um nome... ** Talvez você me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem...' }]
+                }]
+            };
+        } else if (apiAnswer.includes('dica')) {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Repita exatamente a seguinte frase: Ei!! Você também ouviu o som assustados? **O caminho para o enigma possui uma extensão. **Preste atenção nas palavras, você está quase lá!' }]
