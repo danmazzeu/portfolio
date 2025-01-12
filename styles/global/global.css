@@ -85,29 +85,3 @@ textarea:disabled {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--theme);
 }
-
-.black-screen {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 35px;
-}
-
-.black-screen p { 
-    align-self: center !important;
-    font-size: 17px;
-    font-weight: 500;
-    max-width: 200px;
-    line-height: 30px;
-    color: var(--theme);
-    text-align: center !important;
-    text-shadow: 1px 1px 1px #000;
-}

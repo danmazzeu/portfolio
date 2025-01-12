@@ -1,12 +1,11 @@
 $(document).ready(function() {
     const logo = document.getElementById('logo');
     const shakeElements = document.querySelectorAll('section');
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)(); // Use webkitAudioContext for older browsers
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     let audioSource;
 
-    const blackScreen = $('.black-screen');
-    const elementPhrase = $('.black-screen p');
-    const phrase = "Peça para a DAN.IA te dar alguma dica...";
+    const elementPhrase = $('.presentation-fade span');
+    const phrase = '"Peça para a DAN.IA te dar alguma dica sobre o enigma"';
     let i = 0;
 
     logo.addEventListener('click', () => {
@@ -40,14 +39,9 @@ $(document).ready(function() {
                 el.classList.remove('shake');
             });
 
-            blackScreen.fadeIn(500).css('display', 'flex');
             i = 0;
             elementPhrase.text('');
             typer();
-
-            setTimeout(() => {
-                blackScreen.fadeOut(1000);
-            }, (phrase.length * 100) + 500);
         }, 8000);
 
     });
