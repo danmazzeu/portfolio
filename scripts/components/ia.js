@@ -3,7 +3,6 @@ $(document).ready(function() {
     $('#ia-form').submit(function(e) { 
         e.preventDefault();
         $('#ia-submit').attr('disabled', true).text('Aguarde...');
-        $('#ia-input').val('');
 
         const apiKey = 'AIzaSyCFT4N-asqp0JobkYYfe3ei-2q8ut6W7Cc';
         const apiAnswer = $('#ia-input').val().toLowerCase();
@@ -16,6 +15,10 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou! ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída. ** Vá em paz buscador(a).'}]
                 }]
             };
+            const shakeElements = document.querySelectorAll('section');
+            shakeElements.forEach(el => {
+                el.classList.add('shake');
+            });
         } else if (apiAnswer.includes('criatura')) {
             requestData = {
                 contents: [{
@@ -72,6 +75,8 @@ $(document).ready(function() {
                 } else {
                     console.error("Error: Unexpected response structure from Gemini API");
                 }
+
+                $('#ia-input').val('');
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 console.error("Error:", textStatus, errorThrown);
