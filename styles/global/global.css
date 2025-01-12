@@ -94,6 +94,9 @@ textarea:disabled {
 }
 
 .black-screen {
+    display: none;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -102,14 +105,11 @@ textarea:disabled {
     width: 100vw;
     height: 100vh;
     background-color: #000;
-    display: flex !important;
-    flex-direction: column;
     padding: 35px;
 }
 
 .black-screen p { 
+    align-self: inherit !important;
     font-size: 20px;
-    justify-self: center;
-    align-self: center;
     color: var(--theme);
 }

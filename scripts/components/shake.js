@@ -31,37 +31,30 @@ $(document).ready(function() {
     });
 
     let clickCounter = 0;
+    const blackScreen = $('.black-screen');
+    const elementPhrase = $('.black-screen p');
+    const phrase = "Não insista, você já sabe o CAMINHO...";
 
     $('#logo').click(function() {
         clickCounter++;
 
         if (clickCounter === 3) {
-            let blackScreen = $('<div class="black-screen"></div>');
-            $('body').append(blackScreen);
+            let i = 0;
 
-            blackScreen.fadeIn(500, function() {
-                let phrase = "Não insista, você já sabe o CAMINHO...";
-                let i = 0;
-                let elementPhrase = $('<p></p>');
-                blackScreen.append(elementPhrase);
-
-                function typer() {
-                    if (i < phrase.length) {
-                        elementPhrase.append(phrase[i]);
-                        i++;
-                        setTimeout(typer, 100);
-                    }
+            function typer() {
+                if (i < phrase.length) {
+                    elementPhrase.append(phrase[i++]);
+                    setTimeout(typer, 100);
                 }
+            }
 
-                typer();
+            typer();
 
-                setTimeout(function() {
-                    blackScreen.fadeOut(10000, function() {
-                        blackScreen.remove();
-                        elementPhrase.remove();
-                    });
-                }, (phrase.length * 100) + 500);
-            });
+            blackScreen.fadeIn(500).css('display', 'flex');
+
+            setTimeout(() => {
+                blackScreen.fadeOut(10000);
+            }, (phrase.length * 100) + 500);
 
             clickCounter = 0;
         }
