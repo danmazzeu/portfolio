@@ -12,10 +12,6 @@
     transition: var(--card-transition);
 }
   
-.card:hover {
-    scale: 1.05;
-}
-  
 .card.active {
     animation: var(--card-animation);
     transform-origin: center;

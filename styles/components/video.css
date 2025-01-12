@@ -10,10 +10,6 @@ video {
     background-color: var(--video-background);
 }
 
-video:hover {
-    scale: 1.05;
-}
-
 video.active {
     animation: var(--video-animation);
     transform-origin: center;

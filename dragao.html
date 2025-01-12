@@ -19,14 +19,32 @@
         <!-- Global Styles -->
         <link rel="stylesheet" href="styles/global/variables.css">
         <link rel="stylesheet" href="styles/global/global.css">
+
+        <!-- Enigma -->
+        <script defer>
+            function redirectTo() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const criatura = urlParams.get('criatura');
+            
+                if (criatura === 'dragao') {
+                    document.getElementById('enigma').style.display = 'block';
+                } else {
+                    window.location.href = '/index.html';
+                }
+            }
+          
+            window.onload = redirectTo;
+        </script>
     </head>
     <body>
 
-        <!-- Parabéns... -->
-        <p style="color:var(--theme); margin-bottom:5px;">Que estranho, ninguém havia chegado até aqui...</p>
-        <p style="color:var(--theme); margin-bottom:5px;">Quanta bravura e dedicação.</p>
-        <p style="color:var(--theme); margin-bottom:5px;">Sua inteligência é surpreendente, parabéns.</p>
-        <p style="color:var(--theme); margin-bottom:5px;">Corra para a última etapa, volte para o site e pergunta para a DAN-IA sobre a Dragão Ancestral!</p>
+        <!-- Enigma -->
+        <div id="enigma" style="display: none; text-shadow: 1px 1px 1px #000;">
+            <p style="color:var(--theme); margin-bottom:5px;">Que estranho, ninguém havia chegado até aqui...</p>
+            <p style="color:var(--theme); margin-bottom:5px;">Quanta bravura e dedicação.</p>
+            <p style="color:var(--theme); margin-bottom:5px;">Sua inteligência é surpreendente, parabéns.</p>
+            <p style="color:var(--theme); margin-bottom:5px;">Corra para a última etapa, volte para o site e pergunta para a DAN-IA sobre a Dragão Ancestral!</p>
+        </div>
 
     </body>
 </html>

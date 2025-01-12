@@ -51,5 +51,15 @@ $(document).ready(function() {
             typer('"Consigo ouvir um som próximo"'); 
         }, 20000);
     });
+
+    function redirectTo() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const criatura = urlParams.get('criatura');
     
+        if (criatura == 'dragao') {
+            window.location.href = '/dragao.html?criatura=dragao';
+        }
+    }
+    
+    window.onload = redirectTo;
 });

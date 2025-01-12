@@ -12,13 +12,13 @@ $(document).ready(function() {
         if (apiAnswer.includes('ancestral')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou. ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída. ** Vá em paz buscador(a).'}]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou! ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação dosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída. ** Vá em paz buscador(a).'}]
                 }]
             };
         } else if (apiAnswer.includes('criatura')) {
             requestData = {
                 contents: [{
-                    parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Talvez essa seja a chave para desvendar o enigma.' }]
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Deixei cair um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Talvez essa seja a chave para desvendar o enigma. ** ?criatura=' }]
                 }]
             };
         } else if (apiAnswer.includes('dica')) {

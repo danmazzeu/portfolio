@@ -10,10 +10,6 @@
     background-color: var(--card-background);
 }
 
-.gamecard:hover {
-    scale: 1.05;
-}
-
 .gamecard.active {
     animation: var(--card-animation);
     transform-origin: center;

@@ -13,10 +13,6 @@
     transition: var(--card-transition);
 }
 
-.presentation:hover {
-    scale: 1.05;
-}
-
 .presentation.active {
     animation: var(--card-animation);
     transform-origin: center;
