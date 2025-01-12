@@ -112,5 +112,5 @@ textarea:disabled {
     align-self: center !important;
     font-size: 20px;
     font-weight: 500;
-    color: var(--theme);
+    color: #999;
 }
