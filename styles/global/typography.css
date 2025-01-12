@@ -22,13 +22,7 @@ h2.special {
 }
 
 span { 
-    font-size: calc(var(--font-size) + 1px);
-    padding: 5px 15px;
-    font-weight: 600;
-    border-radius: var(--radius);
-    border: 1px solid #444;
-    width: fit-content;
-    background-color: #222 !important;
+    font-size: calc(var(--font-size));
 }
 
 p, 
