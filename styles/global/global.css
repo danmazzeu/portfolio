@@ -5,10 +5,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: none;
+    outline: none !important;
     font-family: "Lato", sans-serif;
     text-rendering: optimizeLegibility;
-    transition: all 0.3s ease-in-out;
+    font-size: var(--fontSize);
+    transition: var(--transition);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 html,
@@ -44,17 +47,6 @@ a {
 
 a:focus, a:active {
     outline: none !important;
-}
-
-input,
-textarea,
-button,
-select,
-a,
-i,
-img {
-    -webkit-tap-highlight-color: transparent !important;
-    text-emphasis-color: transparent !important;
 }
 
 select {
