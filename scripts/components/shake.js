@@ -33,7 +33,7 @@ $(document).ready(function() {
     let clickCounter = 0;
     const blackScreen = $('.black-screen');
     const elementPhrase = $('.black-screen p');
-    const phrase = "Não insista, você já sabe o CAMINHO...";
+    const phrase = "Peça para a DAN.IA te dar alguma dica...";
 
     $('#logo').click(function() {
         clickCounter++;

@@ -103,8 +103,8 @@ textarea:disabled {
 
 .black-screen p { 
     align-self: center !important;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
-    color: #999;
+    color: var(--theme);
     text-shadow: 1px 1px 1px #000;
 }

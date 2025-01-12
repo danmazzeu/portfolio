@@ -8,13 +8,19 @@ $(document).ready(function() {
         const apiAnswer = $('#ia-input').val().toLowerCase();
         let requestData;
 
-        if (apiAnswer.includes('enigma')) {
+        if (apiAnswer.includes('dica')) {
+            requestData = {
+                contents: [{
+                    parts: [{ text: 'Repita exatamente a seguinte frase: Parabéns, você está no caminho certo! **O caminho para o enigma possui uma extensão.' }]
+                }]
+            };
+        } else if (apiAnswer.includes('enigma')) {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Repita exatamente a seguinte frase: Um rugido secreto ecoa nesta página, pronta para conduzi-lo(a) ao seu destino. **Ouça atentamente, pois uma criatura falsa tentará te seduzir. **Tenha visão, use sua intuição. **Deixe a imaginação NAVEGAR. **Ao final, encontrará os próximos passos.' }]
                 }]
             };
-          } else {
+        } else {
             requestData = {
                 contents: [{
                     parts: [{ text: 'Responder em português: ' + apiAnswer }]
