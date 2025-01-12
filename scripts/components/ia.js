@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('#ia-form').submit(function(e) { 
         e.preventDefault();
         $('#ia-submit').attr('disabled', true).text('Aguarde...');
+        $('#ia-input').val('');
 
         const apiKey = 'AIzaSyCFT4N-asqp0JobkYYfe3ei-2q8ut6W7Cc';
         const apiAnswer = $('#ia-input').val().toLowerCase();
