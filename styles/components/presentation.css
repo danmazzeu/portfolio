@@ -141,11 +141,11 @@
         top: -10%; 
         min-height: 120%;
     }
-    .presentation-wave-a { bottom: -130px; }
-    .presentation-wave-b { bottom: -120px; }
+    .presentation-wave-a { bottom: -120px; }
+    .presentation-wave-b { bottom: -80px; }
     .presentation-wave-a,
     .presentation-wave-b {
-        width: 1100px;
+        width: 1200px;
         left: -200px;
     }
 }
