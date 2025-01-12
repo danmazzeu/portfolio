@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         const audio = $('audio#scrollbarAudio').length ? $('audio#scrollbarAudio')[0] : new Audio('/audios/scrollbar.mp3');
-        audio.volume = 0.4;
+        audio.volume = 0.3;
 
         if (!audio.id) {
             audio.id = 'scrollbarAudio';
@@ -14,6 +14,11 @@ $(document).ready(function() {
             audio.play();
             audioPlayed = true;
         }
+
+        audio.addEventListener('ended', function() {
+            audio.currentTime = 0;
+            audio.play();
+        });
 
         $('.card, .feedcard, .presentation, video').each(function() {
             var $this = $(this);
