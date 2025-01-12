@@ -109,7 +109,8 @@ textarea:disabled {
 }
 
 .black-screen p { 
-    align-self: inherit !important;
+    align-self: center !important;
     font-size: 20px;
+    font-weight: 500;
     color: var(--theme);
 }

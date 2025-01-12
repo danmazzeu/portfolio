@@ -44,13 +44,13 @@ $(document).ready(function() {
             function typer() {
                 if (i < phrase.length) {
                     elementPhrase.append(phrase[i++]);
-                    setTimeout(typer, 100);
+                    setTimeout(typer, 50);
                 }
             }
 
             typer();
 
-            blackScreen.fadeIn(500).css('display', 'flex');
+            blackScreen.css('display', 'flex');
 
             setTimeout(() => {
                 blackScreen.fadeOut(10000);
