@@ -40,7 +40,7 @@ $(document).ready(function() {
             $('body').append(blackScreen);
 
             blackScreen.fadeIn(500, function() {
-                let phrase = "Agora você sabe o caminho...";
+                let phrase = "Não insista, você sabe já o CAMINHO...";
                 let i = 0;
                 let elementPhrase = $('<p></p>');
                 blackScreen.append(elementPhrase);
@@ -56,7 +56,7 @@ $(document).ready(function() {
                 typer();
 
                 setTimeout(function() {
-                    blackScreen.fadeOut(5000, function() {
+                    blackScreen.fadeOut(10000, function() {
                         blackScreen.remove();
                         elementPhrase.remove();
                     });
