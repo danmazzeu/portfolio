@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     const blackScreen = $('.black-screen');
     const elementPhrase = $('.black-screen p');
-    const phrase = "Peça para a DAN.IA te dar alguma DICA...";
+    const phrase = "Peça para a DAN.IA te dar alguma dica...";
     let i = 0;
 
     logo.addEventListener('click', () => {
