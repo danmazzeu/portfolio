@@ -31,8 +31,6 @@ span {
     background-color: #222 !important;
 }
 
-p:not(.black-screen > p), 
-p.footer,
 p, 
 b {
     height: 100%;
