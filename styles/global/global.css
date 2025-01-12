@@ -106,6 +106,7 @@ textarea:disabled {
 }
 
 .black-screen p { 
+    font-size: 20px;
     justify-self: center;
     align-self: center;
     color: var(--theme);
