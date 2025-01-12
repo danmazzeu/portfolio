@@ -20,14 +20,6 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou! ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação fosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída. ** Vá em paz buscador(a).'}]
                 }]
             };
-            shakeElements.forEach(el => {
-                el.classList.add('shake');
-            });
-            setTimeout(() => {
-                shakeElements.forEach(el => {
-                    el.classList.remove('shake');
-                });
-            }, 8000);
             audioName = '/audios/enigma_4.mp3';
         } else if (apiAnswer.includes('criatura')) {
             requestData = {
@@ -79,11 +71,20 @@ $(document).ready(function() {
                         .then(response => response.arrayBuffer())
                         .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
                         .then(audioBuffer => {
-                            audioSource = audioContext.createBufferSource();
-                            audioSource.buffer = audioBuffer;
-                            audioSource.connect(audioContext.destination);
-                            audioSource.start();
+                        audioSource = audioContext.createBufferSource();
+                        audioSource.buffer = audioBuffer;
+                        audioSource.connect(audioContext.destination);
+                        audioSource.start();
+                    });
+
+                    shakeElements.forEach(el => {
+                        el.classList.add('shake');
+                    });
+                    setTimeout(() => {
+                        shakeElements.forEach(el => {
+                            el.classList.remove('shake');
                         });
+                    }, 8000);
             
                     for (let i = 0; i < responseText.length; i++) {
                         setTimeout(function() {

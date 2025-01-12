@@ -1,25 +1,7 @@
 $(document).ready(function() {
     let delay = 0;
-    let audioPlayed = false; 
 
     $(window).scroll(function() {
-        const audio = $('audio#scrollbarAudio').length ? $('audio#scrollbarAudio')[0] : new Audio('/audios/scrollbar.mp3');
-        audio.volume = 0.3;
-
-        if (!audio.id) {
-            audio.id = 'scrollbarAudio';
-        }
-
-        if ($(window).scrollTop() > 0 && !audioPlayed) {
-            audio.play();
-            audioPlayed = true;
-        }
-
-        audio.addEventListener('ended', function() {
-            audio.currentTime = 0;
-            audio.play();
-        });
-
         $('.card, .feedcard, .presentation, video').each(function() {
             var $this = $(this);
             var viewportTop = $(window).scrollTop() + $(window).height() / 2 - $this.outerHeight();
@@ -41,7 +23,7 @@ $(document).ready(function() {
 
     $('.card, .feedcard, .gamecard, .presentation, video').each(function() {
         const audio = new Audio('/audios/cards.mp3');
-        audio.volume = 0.2;
+        audio.volume = 0.3;
 
         $(this).mouseover(function() {
             audio.play();
