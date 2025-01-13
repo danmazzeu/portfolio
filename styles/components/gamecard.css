@@ -26,7 +26,7 @@
     background: linear-gradient(to bottom right, #333, #333, #333, #000, var(--theme), var(--theme), #333, #333, #333, #000);
     transform: translate(-50%, -50%) rotate(0deg) skewY(-45deg);
     object-fit: contain;
-    animation: rotate 3s linear infinite; 
+    animation: rotate 3s linear infinite;
 }
 
 .gamecard-container {

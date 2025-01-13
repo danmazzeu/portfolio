@@ -18,6 +18,54 @@
     transform-origin: center;
 }
 
+.presentation-logo {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    left: 40px;
+    overflow: hidden;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: var(--card-boxSahdow);
+    animation: jello 2s infinite;
+}
+
+.presentation-logo img {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: var(--card-radius);
+}
+
+.presentation-logo .logo-theme {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--card-radius);
+    background-color: var(--theme);
+}
+
+.presentation-logo .logo-gradient {
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom right, #333, #333, #333, #000, var(--theme), var(--theme), #333, #333, #333, #000);
+    transform: translate(-50%, -50%) rotate(0deg) skewY(-45deg);
+    object-fit: contain;
+    animation: rotate 3s linear infinite;
+}
+
 .presentation-video {
     position: absolute;
     z-index: 1;
@@ -45,18 +93,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
 }
 
-.presentation-fade img {
-    cursor: pointer;
-    align-self: flex-start;
-    width: 70px;
-    height: auto;
-    border-radius: var(--card-radius);
-    box-shadow: var(--card-boxSahdow);
-    margin-bottom: 20px;
-    animation: jello 2s infinite;
-    filter: saturate(120%) brightness(100%) contrast(108%);
-}
-
 .presentation-fade h1 {
     font-size: 30px;
     text-transform: uppercase;
@@ -65,6 +101,7 @@
     border-left: 0 !important;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
+    margin-top: 90px;
     margin-bottom: 15px;
 }
 
@@ -96,9 +133,9 @@
     width: 1500px;
     position: absolute;
     z-index: 3;
-    bottom: -70px;
+    bottom: -90px;
     left: -100px;
-    opacity: 0.5;
+    opacity: 0.4;
     box-shadow: 1px 1px 1px #000;
     transform-origin: left center;
     animation: wave 5s ease-in-out infinite;
