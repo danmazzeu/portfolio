@@ -42,24 +42,13 @@
 }
 
 .presentation-logo .logo-theme {
-    position: absolute;
-    z-index: -1;
-    top: 10px;
-    left: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: var(--card-radius);
-    background-color: var(--theme);
-}
-
-.presentation-logo .logo-gradient {
-    width: 200%;
-    height: 200%;
+    width: 150%;
+    height: 150%;
     position: absolute;
     overflow: hidden;
     z-index: -2;
-    top: -50%;
-    left: -50%;
+    top: -25%;
+    left: -25%;
     background: linear-gradient(to bottom right, #333, #333, #333, #000, var(--theme), var(--theme), #333, #333, #333, #000);
     transform: translate(-50%, -50%) rotate(0deg) skewY(-45deg);
     object-fit: contain;
