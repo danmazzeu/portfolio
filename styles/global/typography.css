@@ -19,7 +19,7 @@ h2 {
 
 h3 {
     font-size: calc(var(--font-size) + 4px);
-    line-height: 30px;
+    line-height: 25px;
     text-transform: uppercase;
     margin-bottom: 5px;
     color: #999;
@@ -79,6 +79,7 @@ p.footer b {
 @media all and (max-width: 1200px) {
     h1 { font-size: 20px; }
     h2 { font-size: var(--font-size); }
+    h3 { font-size: 17px; }
     h2.special { font-size: calc(var(--font-size) + 6px); }
     h2.special > i { font-size: calc(var(--font-size) + 6px); }
     h2 > i { font-size: var(--font-size); }
