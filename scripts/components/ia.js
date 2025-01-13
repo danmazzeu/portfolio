@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
-    const audioContext = new (window.AudioContext || window.AudioContext)();
-    let audioSource;
-    let audioName;
 
     $('#ia-form').submit(function(e) { 
         e.preventDefault();
+        const audioContext = new (window.AudioContext || window.AudioContext)();
+        let audioSource;
+        let audioName;
+
         $('#ia-submit').attr('disabled', true).text('Aguarde...');
 
         const apiKey = 'AIzaSyCFT4N-asqp0JobkYYfe3ei-2q8ut6W7Cc';

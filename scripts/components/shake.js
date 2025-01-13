@@ -1,12 +1,12 @@
 $(document).ready(function() {
-    const logo = document.getElementById('logo');
+    const elementPhrase = $('.presentation-fade span');
     const shakeElements = document.querySelectorAll('section');
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const logo = document.getElementById('logo');
+    let audioContext = '';
     let audioSource;
 
-    const elementPhrase = $('.presentation-fade span');
-
     logo.addEventListener('click', () => {
+        audioContext = new (window.AudioContext || window.AudioContext)();
         elementPhrase.text('');
 
         if (audioSource) {
