@@ -6,8 +6,8 @@ function trocarVideo(newVideo) {
 }
 
 document.getElementById('logo').addEventListener('click', () => {
-    trocarVideo(videos[0]);
+    trocarVideo(videos[1]);
     setTimeout(() => {
-        trocarVideo(videos[1]);
+        trocarVideo(videos[0]);
     }, 20000);
 });
