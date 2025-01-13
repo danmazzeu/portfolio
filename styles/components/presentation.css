@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    border: 1px solid var(--theme);
     box-shadow: var(--card-boxSahdow);
     animation: jello 2s infinite;
 }
