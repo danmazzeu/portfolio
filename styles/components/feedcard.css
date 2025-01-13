@@ -36,6 +36,9 @@
     background-size: cover;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #111;
+    display: inline-block;
+    animation: jello 2s infinite;
+    transform-origin: center;
 }
 
 .feedcard-header-info {
