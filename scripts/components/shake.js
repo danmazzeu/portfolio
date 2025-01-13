@@ -49,7 +49,7 @@ $(document).ready(function() {
         setTimeout(() => {
             elementPhrase.text('');
             typer('"Consigo ouvir um som próximo"'); 
-        }, 9000);
+        }, 20000);
     });
 
     function redirectTo() {
