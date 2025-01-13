@@ -17,6 +17,14 @@ h2 {
     color: #fff;
 }
 
+h3 {
+    font-size: calc(var(--font-size) + 4px);
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #999;
+}
+
 h2.special { 
     font-size: calc(var(--font-size) + 10px); 
 }
