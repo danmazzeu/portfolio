@@ -21,14 +21,17 @@ $(document).ready(function() {
         delay = 0; 
     });
 
-    $('.card, .feedcard, .gamecard, .presentation, video').each(function() {
-        const audio = new Audio('/audios/cards.mp3');
+    
+    $('.card, .feedcard, .gamecard, .presentation, video').click(function() {
+        $('.card, .feedcard, .gamecard, .presentation, video').each(function() {
+            const audio = new Audio('/audios/cards.mp3');
 
-        $(this).mouseover(function() {
-            audio.play();
-        }).click(function() {
-            audio.currentTime = 0;
-            audio.play();
+            $(this).mouseover(function() {
+                audio.play();
+            }).click(function() {
+                audio.currentTime = 0;
+                audio.play();
+            });
         });
     });
 });
