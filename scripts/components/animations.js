@@ -22,7 +22,7 @@ $(document).ready(function() {
     });
 
     
-    $('.card, .feedcard, .gamecard, .presentation, video').click(function() {
+    $(window).scroll(function() {
         $('.card, .feedcard, .gamecard, .presentation, video').each(function() {
             const audio = new Audio('/audios/cards.mp3');
 
