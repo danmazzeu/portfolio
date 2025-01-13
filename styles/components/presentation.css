@@ -32,7 +32,6 @@
     border-radius: 10px;
     border: 1px solid #444;
     box-shadow: var(--card-boxSahdow);
-    animation: jello 2s infinite;
 }
 
 .presentation-logo img {
