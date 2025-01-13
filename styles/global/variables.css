@@ -1,8 +1,8 @@
 :root {
     /* Colors */
-    --theme: #71fe00;
+    --theme: #34eb6e;
     --title: #fff;
-    --title-borderColor: #71fe00;
+    --title-borderColor: var(--theme);
     --footer: #666;
     --instagram: #e1306c !important;
     --github: #fff !important;
