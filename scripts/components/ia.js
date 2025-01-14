@@ -86,6 +86,12 @@ $(document).ready(function() {
                         audioSource.start();
                     });
 
+                    function stopAudio() {
+                        if (audioSource) {
+                            audioSource.stop();
+                        }
+                    }
+
                     if (apiAnswer.includes('ancestral')) {
                         shakeElements.forEach(el => {
                             el.classList.add('shake');
@@ -106,11 +112,11 @@ $(document).ready(function() {
                             element.scrollTop = element.scrollHeight;
 
                             if (i == (responseText.length - 1)) {
+                                stopAudio();
                                 $('#ia-submit').attr('disabled', false).text('Perguntar');
                             }
                         }, i * 30);
                     }
-
                 } else {
                     console.error("Error: Unexpected response structure from Gemini API");
                 }
