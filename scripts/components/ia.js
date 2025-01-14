@@ -85,11 +85,6 @@ $(document).ready(function() {
                         audioSource.connect(audioContext.destination);
                         audioSource.start();
                     });
-                    function stopAudio() {
-                        if (audioSource) {
-                            audioSource.stop();
-                        }
-                    }
 
                     if (apiAnswer.includes('ancestral')) {
                         shakeElements.forEach(el => {
@@ -111,18 +106,7 @@ $(document).ready(function() {
                             element.scrollTop = element.scrollHeight;
 
                             if (i == (responseText.length - 1)) {
-
-                                if (
-                                    !apiAnswer.includes('ancestral') || 
-                                    !apiAnswer.includes('dica') || 
-                                    !apiAnswer.includes('enigma') || 
-                                    !apiAnswer.includes('criatura') || 
-                                    !apiAnswer.includes('cobra') || 
-                                    !apiAnswer.includes('serpente')) {
-                                        stopAudio();
-                                }
-
-                                
+                                stopAudio();
                                 $('#ia-submit').attr('disabled', false).text('Perguntar');
                             }
                         }, i * 30);
