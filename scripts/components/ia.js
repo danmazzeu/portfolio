@@ -86,12 +86,6 @@ $(document).ready(function() {
                         audioSource.start();
                     });
 
-                    function stopAudio() {
-                        if (audioSource) {
-                            audioSource.stop();
-                        }
-                    }
-
                     if (apiAnswer.includes('ancestral')) {
                         shakeElements.forEach(el => {
                             el.classList.add('shake');
@@ -101,6 +95,12 @@ $(document).ready(function() {
                                 el.classList.remove('shake');
                             });
                         }, 8000);
+                    } else {
+                        function stopAudio() {
+                            if (audioSource) {
+                                audioSource.stop();
+                            }
+                        }
                     }
             
                     for (let i = 0; i < responseText.length; i++) {
