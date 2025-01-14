@@ -6,6 +6,7 @@ $(document).ready(function() {
         const audioContext = new (window.AudioContext || window.AudioContext)();
         let audioSource;
         let audioName;
+        let limitAudio = false;
 
         $('#ia-submit').attr('disabled', true).text('Aguarde...');
 
@@ -21,6 +22,7 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Hahahaha!. ** Muito óbvio não é mesmo!? ** Sou apenas uma distração, quem você procura, está trancada graças a minha armadilha! ** Esperando a anos por ajuda.'}]
                 }]
             };
+            limitAudio = false;
             audioName = '/audios/enigma_5.mp3';
         } else if (apiAnswer.includes('ancestral')) {
             requestData = {
@@ -28,6 +30,7 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Eu simplesmente não acredito que você me encontrou! ** Fiquei anos trancada nessa caverna, esperando que um dia, alguém com muita determinação fosse me encontrar. ** Graças a voccê estou libre para proteger a Floresta Labirinto! ** Estou imensamente grata pela sua ajuda, caso precise de proteção um dia, conte comigo! ** Ficarei te devendo um favor. ** Irei solicitar ao Mago da Floresta para que encaminhe algumas Elfas Ancestrais para te guiar até a saída. ** Vá em paz buscador(a).'}]
                 }]
             };
+            limitAudio = false;
             audioName = '/audios/enigma_4.mp3';
         } else if (apiAnswer.includes('criatura')) {
             requestData = {
@@ -35,6 +38,7 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Existe um arquivo na raiz deste projeto, ele possui um nome. ** Por favor me ajude a lembrar, era alguma coisa envolvendo criaturas místicas, não me lembro bem. ** O som que eu ouço me parece familiar. ** Encontrei um papel, estava escrito isso, talvez essa seja a chave para desvendar o enigma: ** ?criatura=' }]
                 }],
             };
+            limitAudio = false;
             audioName = '/audios/enigma_3.mp3';
         } else if (apiAnswer.includes('dica')) {
             requestData = {
@@ -42,6 +46,7 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Ei!! Você também ouviu o som assustador? ** O caminho para o enigma possui uma extensão. ** Preste atenção nas palavras, você está próximo(a)! ** Vasculhe o código-fonte, deixei algo escrito lá para você.' }]
                 }]
             };
+            limitAudio = false;
             audioName = '/audios/enigma_2.mp3';
         } else if (apiAnswer.includes('enigma')) {
             requestData = {
@@ -49,6 +54,7 @@ $(document).ready(function() {
                     parts: [{ text: 'Repita exatamente a seguinte frase: Um rugido secreto ecoa nesta página, pronta para conduzi-lo(a) ao seu destino. ** Ouça atentamente, pois uma criatura falsa tentará te seduzir. ** Tenha visão, use sua intuição. ** Deixe a imaginação NAVEGAR. ** Ao final, encontrará os próximos passos.' }]
                 }]
             };
+            limitAudio = false;
             audioName = '/audios/enigma_1.mp3';
         } else {
             requestData = {
@@ -56,6 +62,7 @@ $(document).ready(function() {
                     parts: [{ text: 'Responda: ' + apiAnswer }]
                 }],
             };
+            limitAudio = true;
             audioName = '/audios/ia.mp3';
         }
     
@@ -86,6 +93,12 @@ $(document).ready(function() {
                         audioSource.start();
                     });
 
+                    function stopAudio() {
+                        if (audioSource) {
+                            audioSource.stop();
+                        }
+                    }
+
                     if (apiAnswer.includes('ancestral')) {
                         shakeElements.forEach(el => {
                             el.classList.add('shake');
@@ -106,7 +119,9 @@ $(document).ready(function() {
                             element.scrollTop = element.scrollHeight;
 
                             if (i == (responseText.length - 1)) {
-                                stopAudio();
+                                if (limitAudio) {
+                                    stopAudio();
+                                }
                                 $('#ia-submit').attr('disabled', false).text('Perguntar');
                             }
                         }, i * 30);
