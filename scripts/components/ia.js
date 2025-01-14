@@ -95,7 +95,15 @@ $(document).ready(function() {
                                 el.classList.remove('shake');
                             });
                         }, 8000);
-                    } else {
+                    }
+
+                    if (
+                        !apiAnswer.includes('ancestral') || 
+                        !apiAnswer.includes('dica') || 
+                        !apiAnswer.includes('enigma') || 
+                        !apiAnswer.includes('criatura') || 
+                        !apiAnswer.includes('cobra') || 
+                        !apiAnswer.includes('serpente')) {
                         function stopAudio() {
                             if (audioSource) {
                                 audioSource.stop();
