@@ -6,7 +6,7 @@ $(document).ready(function() {
     let audioSource;
 
     logo.addEventListener('click', () => {
-        audioContext = new (window.AudioContext || window.AudioContext)();
+        audioContext = new window.AudioContext();
         elementPhrase.text('');
 
         if (audioSource) {

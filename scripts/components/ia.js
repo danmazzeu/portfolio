@@ -1,9 +1,8 @@
 $(document).ready(function() {
 
-
     $('#ia-form').submit(function(e) { 
         e.preventDefault();
-        const audioContext = new (window.AudioContext || window.AudioContext)();
+        const audioContext = new window.AudioContext();
         let audioSource;
         let audioName;
         let limitAudio = false;
@@ -14,7 +13,6 @@ $(document).ready(function() {
         const apiAnswer = $('#ia-input').val().toLowerCase();
         let requestData;
         const shakeElements = document.querySelectorAll('section');
-
 
         if (apiAnswer.includes('cobra') || apiAnswer.includes('serpente')) {
             requestData = {
