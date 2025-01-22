@@ -9,16 +9,20 @@ h1 {
     text-shadow: 1px 1px 1px #111 !important;
 }
 
-h2 {
+h2, 
+h3 {
+    align-self: flex-start;
     font-size: calc(var(--font-size) + 4px);
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 5px;
     color: #fff;
 }
 
-h2.special { 
-    font-size: calc(var(--font-size) + 10px); 
+h3 { 
+    font-size: calc(var(--font-size) + 1px);
+    color: #888;
+    font-weight: 400;
+    margin-top: -5px;
 }
 
 span { 
@@ -55,7 +59,6 @@ h2 > i {
 
 a > i { font-size: var(--font-size); }
 h2 > i { font-size: calc(var(--font-size) + 4px); }
-h2.special > i { font-size: calc(var(--font-size) + 10px); }
 
 input { font-size: var(--font-size); }
 button { font-size: var(--font-size); }
@@ -71,8 +74,7 @@ p.footer b {
 @media all and (max-width: 1200px) {
     h1 { font-size: 20px; }
     h2 { font-size: var(--font-size); }
-    h2.special { font-size: calc(var(--font-size) + 6px); }
-    h2.special > i { font-size: calc(var(--font-size) + 6px); }
+    h3 { font-size: 17px; }
     h2 > i { font-size: var(--font-size); }
     span { font-size: calc(var(--font-size) - 2px); }
     p { font-size: calc(var(--font-size) - 2px); }

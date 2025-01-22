@@ -24,14 +24,14 @@
     top: 40px;
     left: 40px;
     overflow: hidden;
-    width: 72px;
-    height: 72px;
+    width: 73px;
+    height: 73px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    border: 1px solid #444;
     box-shadow: var(--card-boxSahdow);
-    animation: jello 2s infinite;
 }
 
 .presentation-logo img {
@@ -83,9 +83,6 @@
 }
 
 .presentation-fade h1 {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 900;
     padding-left: 0 !important;
     border-left: 0 !important;
     color: #fff;
