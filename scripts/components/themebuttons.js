@@ -1,5 +1,5 @@
 const themeButtons = document.querySelectorAll('.theme-button');
-const borderSelected = "2px solid #fff";
+const borderSelected = "1px solid #666";
 
 function setThemeFromStorage() {
     const storedTheme = localStorage.getItem('themeColor');
