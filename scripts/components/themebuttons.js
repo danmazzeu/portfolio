@@ -11,6 +11,16 @@ function setThemeFromStorage() {
                 button.style.border = borderSelected;
             }
         });
+    } else {
+        const root = document.documentElement;
+        const theme = getComputedStyle(root).getPropertyValue('--theme');
+        document.documentElement.style.setProperty('--theme', theme);
+
+        themeButtons.forEach(button => {
+            if (button.dataset.color == theme) {
+                button.style.border = borderSelected;
+            }
+        });
     }
 }
 
