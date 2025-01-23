@@ -13,13 +13,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:40px;
-    height: 40px;
     font-size: 20px;
-    border-radius:100%;
     cursor: pointer;
     box-shadow: var(--box-shadow);
-    background-color: var(--card-background);
     color: #fff;
 }
 
